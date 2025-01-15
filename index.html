@@ -1,1 +1,3582 @@
- 
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_44703a503b44a71be5080267d6e56c7c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_44703a503b44a71be5080267d6e56c7c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_44703a503b44a71be5080267d6e56c7c = L.map(
+                "map_44703a503b44a71be5080267d6e56c7c",
+                {
+                    center: [36.5, 127.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25211f2b4190da2af7e4b6e5fe66de28 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25211f2b4190da2af7e4b6e5fe66de28.addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var marker_ff3bf0965d7139a7f73b33575d570207 = L.marker(
+                [36.8150283, 127.1140654],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_e1abd4a05b809553ba0e094cec67b59d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff3bf0965d7139a7f73b33575d570207.setIcon(icon_e1abd4a05b809553ba0e094cec67b59d);
+        
+    
+        var popup_6bbc9ac70fd88aa4225cf8e225e22f2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3228aba926d02ebb83c91783839c64d = $(`<div id="html_d3228aba926d02ebb83c91783839c64d" style="width: 100.0%; height: 100.0%;"><b>천안시</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 1: 2024-12-04 : 오이<br>ID 24: 2024-08-28 : 배<br>ID 121: 2024-01-17 : 오이<br>ID 122: 2024-01-17 : 배<br></div>`)[0];
+                popup_6bbc9ac70fd88aa4225cf8e225e22f2b.setContent(html_d3228aba926d02ebb83c91783839c64d);
+            
+        
+
+        marker_ff3bf0965d7139a7f73b33575d570207.bindPopup(popup_6bbc9ac70fd88aa4225cf8e225e22f2b)
+        ;
+
+        
+    
+    
+            marker_ff3bf0965d7139a7f73b33575d570207.bindTooltip(
+                `<div>
+                     천안시 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf4e4862546e29ec99436be34e3edc8c = L.marker(
+                [35.1803459, 128.1079953],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_9a5a99203320b539a47f79b298ac640e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cf4e4862546e29ec99436be34e3edc8c.setIcon(icon_9a5a99203320b539a47f79b298ac640e);
+        
+    
+        var popup_1aaccd4887242bbe1a5cfc44b929af97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5f6cba2a447b3e299a6f52fb944e0ec = $(`<div id="html_a5f6cba2a447b3e299a6f52fb944e0ec" style="width: 100.0%; height: 100.0%;"><b>진주시</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 5: 2024-11-07 : 딸기<br>ID 17: 2024-10-10 : 파프리카/호박<br>ID 74: 2024-05-10 : 산딸기/매실<br>ID 99: 2024-02-28 : 우엉/마<br></div>`)[0];
+                popup_1aaccd4887242bbe1a5cfc44b929af97.setContent(html_a5f6cba2a447b3e299a6f52fb944e0ec);
+            
+        
+
+        marker_cf4e4862546e29ec99436be34e3edc8c.bindPopup(popup_1aaccd4887242bbe1a5cfc44b929af97)
+        ;
+
+        
+    
+    
+            marker_cf4e4862546e29ec99436be34e3edc8c.bindTooltip(
+                `<div>
+                     진주시 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8bafae0f26339cf87941d1db8de29ed = L.marker(
+                [35.0158859, 126.7108313],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_1f646cc4a83278911528ab4b9ca33df2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f8bafae0f26339cf87941d1db8de29ed.setIcon(icon_1f646cc4a83278911528ab4b9ca33df2);
+        
+    
+        var popup_37df8a9e8036ecf100e8bda043d1de9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4df38c5d40a987624329c15ef38d0c9d = $(`<div id="html_4df38c5d40a987624329c15ef38d0c9d" style="width: 100.0%; height: 100.0%;"><b>나주시</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 50: 2024-06-25 : 딸기<br>ID 72: 2024-05-17 : 양파<br>ID 105: 2024-02-16 : 양파<br>ID 126: 2024-01-19 : 배<br></div>`)[0];
+                popup_37df8a9e8036ecf100e8bda043d1de9d.setContent(html_4df38c5d40a987624329c15ef38d0c9d);
+            
+        
+
+        marker_f8bafae0f26339cf87941d1db8de29ed.bindPopup(popup_37df8a9e8036ecf100e8bda043d1de9d)
+        ;
+
+        
+    
+    
+            marker_f8bafae0f26339cf87941d1db8de29ed.bindTooltip(
+                `<div>
+                     나주시 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d4e64a3d70bc2f669bae8ef8aa6daa4 = L.marker(
+                [36.1398035, 128.1139534],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_3981b22ff5fcb16057b0fb125890fcc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8d4e64a3d70bc2f669bae8ef8aa6daa4.setIcon(icon_3981b22ff5fcb16057b0fb125890fcc9);
+        
+    
+        var popup_2039ae74feb47249b8ee0dd1ba2325bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ad6ba90a86ab7df34a16550f9bd7e00 = $(`<div id="html_5ad6ba90a86ab7df34a16550f9bd7e00" style="width: 100.0%; height: 100.0%;"><b>김천시</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 44: 2024-07-15 : 대파<br>ID 56: 2024-06-07 : 복숭아<br>ID 66: 2024-05-31 : 복숭아/자두/살구<br>ID 127: 2024-01-12 : 사과<br></div>`)[0];
+                popup_2039ae74feb47249b8ee0dd1ba2325bb.setContent(html_5ad6ba90a86ab7df34a16550f9bd7e00);
+            
+        
+
+        marker_8d4e64a3d70bc2f669bae8ef8aa6daa4.bindPopup(popup_2039ae74feb47249b8ee0dd1ba2325bb)
+        ;
+
+        
+    
+    
+            marker_8d4e64a3d70bc2f669bae8ef8aa6daa4.bindTooltip(
+                `<div>
+                     김천시 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b2b62bd7f3b3468d372ddbfb3eebfce = L.marker(
+                [35.9479291, 126.9578025],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_cc2e8c717d2eb7e5a36f05eba991f06d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4b2b62bd7f3b3468d372ddbfb3eebfce.setIcon(icon_cc2e8c717d2eb7e5a36f05eba991f06d);
+        
+    
+        var popup_050bf5f3d326331a96acd12627179114 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d306adc9bcce4d5a47bafa7fdf975448 = $(`<div id="html_d306adc9bcce4d5a47bafa7fdf975448" style="width: 100.0%; height: 100.0%;"><b>익산시</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 31: 2024-08-20 : 고구마<br>ID 38: 2024-08-07 : 고구마<br>ID 49: 2024-06-26 : 감자/고구마<br>ID 64: 2024-06-03 : 양파<br></div>`)[0];
+                popup_050bf5f3d326331a96acd12627179114.setContent(html_d306adc9bcce4d5a47bafa7fdf975448);
+            
+        
+
+        marker_4b2b62bd7f3b3468d372ddbfb3eebfce.bindPopup(popup_050bf5f3d326331a96acd12627179114)
+        ;
+
+        
+    
+    
+            marker_4b2b62bd7f3b3468d372ddbfb3eebfce.bindTooltip(
+                `<div>
+                     익산시 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_10c1d284341609d63c11dcad9e0bc408 = L.marker(
+                [35.4163118, 127.3903713],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_25945258e98fb33bfb053cbe88074f5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_10c1d284341609d63c11dcad9e0bc408.setIcon(icon_25945258e98fb33bfb053cbe88074f5e);
+        
+    
+        var popup_4b8df56173268aafd4fd8d097824861a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71902f179a5d6df16a3cd71321aa8f80 = $(`<div id="html_71902f179a5d6df16a3cd71321aa8f80" style="width: 100.0%; height: 100.0%;"><b>남원시</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 23: 2024-08-29 : 사과<br>ID 36: 2024-08-08 : 사과,포도<br>ID 96: 2024-03-11 : 감자<br>ID 103: 2024-02-20 : 포도<br></div>`)[0];
+                popup_4b8df56173268aafd4fd8d097824861a.setContent(html_71902f179a5d6df16a3cd71321aa8f80);
+            
+        
+
+        marker_10c1d284341609d63c11dcad9e0bc408.bindPopup(popup_4b8df56173268aafd4fd8d097824861a)
+        ;
+
+        
+    
+    
+            marker_10c1d284341609d63c11dcad9e0bc408.bindTooltip(
+                `<div>
+                     남원시 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3666d9a1132d6186f86d971a4106abf4 = L.marker(
+                [37.3705, 128.3903],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_4501021c0dd4921fe23815a55ceab967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3666d9a1132d6186f86d971a4106abf4.setIcon(icon_4501021c0dd4921fe23815a55ceab967);
+        
+    
+        var popup_e7c1d735561303c4af4de58c7871b26c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b062c8fbc3bd6a4e81a015083dcfbc17 = $(`<div id="html_b062c8fbc3bd6a4e81a015083dcfbc17" style="width: 100.0%; height: 100.0%;"><b>평창군</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 20: 2024-09-06 : 일반<br>ID 26: 2024-08-28 : 일반<br>ID 39: 2024-08-01 : 배추/무<br>ID 41: 2024-07-30 : 고추,옥수수,쪽파<br></div>`)[0];
+                popup_e7c1d735561303c4af4de58c7871b26c.setContent(html_b062c8fbc3bd6a4e81a015083dcfbc17);
+            
+        
+
+        marker_3666d9a1132d6186f86d971a4106abf4.bindPopup(popup_e7c1d735561303c4af4de58c7871b26c)
+        ;
+
+        
+    
+    
+            marker_3666d9a1132d6186f86d971a4106abf4.bindTooltip(
+                `<div>
+                     평창군 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a13e0260674b3f4c37f938ca3b3811ed = L.marker(
+                [36.6808989, 126.8448742],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_e0ea17b34e4bc7c250ba11b047ffae97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a13e0260674b3f4c37f938ca3b3811ed.setIcon(icon_e0ea17b34e4bc7c250ba11b047ffae97);
+        
+    
+        var popup_eaba1974b6447bab32cefe035e688fac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3228e06ba8e6a4195ce6c663a6ccadb = $(`<div id="html_b3228e06ba8e6a4195ce6c663a6ccadb" style="width: 100.0%; height: 100.0%;"><b>예산군</b><br>방문 횟수: 4회<br><br>방문 내역:<br>ID 89: 2024-04-11 : 사과/배<br>ID 93: 2024-04-05 : 쪽파/열무<br>ID 111: 2024-02-01 : 쪽파<br>ID 119: 2024-01-16 : 사과/배<br></div>`)[0];
+                popup_eaba1974b6447bab32cefe035e688fac.setContent(html_b3228e06ba8e6a4195ce6c663a6ccadb);
+            
+        
+
+        marker_a13e0260674b3f4c37f938ca3b3811ed.bindPopup(popup_eaba1974b6447bab32cefe035e688fac)
+        ;
+
+        
+    
+    
+            marker_a13e0260674b3f4c37f938ca3b3811ed.bindTooltip(
+                `<div>
+                     예산군 (4회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d6457a80d63c1c5a38a2cf722c5c056 = L.marker(
+                [35.803815, 126.880557],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_f0a29787ef368f85f58ec432c892c1f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d6457a80d63c1c5a38a2cf722c5c056.setIcon(icon_f0a29787ef368f85f58ec432c892c1f2);
+        
+    
+        var popup_8c721ca1146a053153f9440640490731 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56a1c614542b337f1687b500ea5b4120 = $(`<div id="html_56a1c614542b337f1687b500ea5b4120" style="width: 100.0%; height: 100.0%;"><b>김제시</b><br>방문 횟수: 3회<br><br>방문 내역:<br>ID 37: 2024-08-07 : 고구마<br>ID 48: 2024-06-26 : 감자/고구마<br>ID 94: 2024-03-13 : 감자<br></div>`)[0];
+                popup_8c721ca1146a053153f9440640490731.setContent(html_56a1c614542b337f1687b500ea5b4120);
+            
+        
+
+        marker_1d6457a80d63c1c5a38a2cf722c5c056.bindPopup(popup_8c721ca1146a053153f9440640490731)
+        ;
+
+        
+    
+    
+            marker_1d6457a80d63c1c5a38a2cf722c5c056.bindTooltip(
+                `<div>
+                     김제시 (3회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_06b51d8cf50e30a050c42eda8a80ca02 = L.marker(
+                [34.7711356, 127.0798978],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_d865407ac27a31ed707b2e416f5cda1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_06b51d8cf50e30a050c42eda8a80ca02.setIcon(icon_d865407ac27a31ed707b2e416f5cda1e);
+        
+    
+        var popup_b4eb5777e61bdbfbc9fa06311249bdeb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db7980fd8aaf12441c866d75aabecb40 = $(`<div id="html_db7980fd8aaf12441c866d75aabecb40" style="width: 100.0%; height: 100.0%;"><b>보성군</b><br>방문 횟수: 3회<br><br>방문 내역:<br>ID 22: 2024-08-30 : 쪽파<br>ID 76: 2024-05-09 : 양파/감자/쪽파<br>ID 78: 2024-05-06 : 감자<br></div>`)[0];
+                popup_b4eb5777e61bdbfbc9fa06311249bdeb.setContent(html_db7980fd8aaf12441c866d75aabecb40);
+            
+        
+
+        marker_06b51d8cf50e30a050c42eda8a80ca02.bindPopup(popup_b4eb5777e61bdbfbc9fa06311249bdeb)
+        ;
+
+        
+    
+    
+            marker_06b51d8cf50e30a050c42eda8a80ca02.bindTooltip(
+                `<div>
+                     보성군 (3회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d1cf46b53cbea5889d82769b8216eeb = L.marker(
+                [36.1747588, 127.7834432],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_0e0a06f618dc6a9d2a840126f42bb3dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d1cf46b53cbea5889d82769b8216eeb.setIcon(icon_0e0a06f618dc6a9d2a840126f42bb3dc);
+        
+    
+        var popup_1d22c9a322faaee10d3a8d9d3530bb2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38f0e561434019110b5c8db6cb3048ae = $(`<div id="html_38f0e561434019110b5c8db6cb3048ae" style="width: 100.0%; height: 100.0%;"><b>영동군</b><br>방문 횟수: 3회<br><br>방문 내역:<br>ID 12: 2024-10-23 : 당근<br>ID 70: 2024-05-23 : 포도/복숭아/사과<br>ID 86: 2024-04-17 : 블루베리<br></div>`)[0];
+                popup_1d22c9a322faaee10d3a8d9d3530bb2c.setContent(html_38f0e561434019110b5c8db6cb3048ae);
+            
+        
+
+        marker_7d1cf46b53cbea5889d82769b8216eeb.bindPopup(popup_1d22c9a322faaee10d3a8d9d3530bb2c)
+        ;
+
+        
+    
+    
+            marker_7d1cf46b53cbea5889d82769b8216eeb.bindTooltip(
+                `<div>
+                     영동군 (3회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c268ee8cb8367e830d815cc5a557aba4 = L.marker(
+                [34.9205959, 127.3871502],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_c0b6e824d35f3c5206733be5788880a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c268ee8cb8367e830d815cc5a557aba4.setIcon(icon_c0b6e824d35f3c5206733be5788880a9);
+        
+    
+        var popup_37d1279482614e9d1b08fcde3b1d5878 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cfe3b56c2fdd8a782e1542d73ed6231 = $(`<div id="html_9cfe3b56c2fdd8a782e1542d73ed6231" style="width: 100.0%; height: 100.0%;"><b>창녕</b><br>방문 횟수: 3회<br><br>방문 내역:<br>ID 13: 2024-10-21 : 마늘/생강<br>ID 102: 2024-02-21 : 마늘<br>ID 115: 2024-02-02 : 마늘<br></div>`)[0];
+                popup_37d1279482614e9d1b08fcde3b1d5878.setContent(html_9cfe3b56c2fdd8a782e1542d73ed6231);
+            
+        
+
+        marker_c268ee8cb8367e830d815cc5a557aba4.bindPopup(popup_37d1279482614e9d1b08fcde3b1d5878)
+        ;
+
+        
+    
+    
+            marker_c268ee8cb8367e830d815cc5a557aba4.bindTooltip(
+                `<div>
+                     창녕 (3회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89c491993c9dec215a11c309075d78b2 = L.marker(
+                [36.784499, 126.450317],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_7026eded0962e7dd4c9a6b0663f21a17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_89c491993c9dec215a11c309075d78b2.setIcon(icon_7026eded0962e7dd4c9a6b0663f21a17);
+        
+    
+        var popup_2a2b7a8bdc5484f8061c9ea27148bf2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20f72e300594ce9eed370b1c328fb6fc = $(`<div id="html_20f72e300594ce9eed370b1c328fb6fc" style="width: 100.0%; height: 100.0%;"><b>서산시</b><br>방문 횟수: 3회<br><br>방문 내역:<br>ID 68: 2024-05-28 : 감자<br>ID 85: 2024-04-29 : 생강/마늘<br>ID 90: 2024-04-09 : 알타리/쪽파<br></div>`)[0];
+                popup_2a2b7a8bdc5484f8061c9ea27148bf2e.setContent(html_20f72e300594ce9eed370b1c328fb6fc);
+            
+        
+
+        marker_89c491993c9dec215a11c309075d78b2.bindPopup(popup_2a2b7a8bdc5484f8061c9ea27148bf2e)
+        ;
+
+        
+    
+    
+            marker_89c491993c9dec215a11c309075d78b2.bindTooltip(
+                `<div>
+                     서산시 (3회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9261596447b309c20fff91e08dc69c82 = L.marker(
+                [36.815, 127.7866],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_f481178919cf6b5bf6b7f0b2dc581c5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9261596447b309c20fff91e08dc69c82.setIcon(icon_f481178919cf6b5bf6b7f0b2dc581c5d);
+        
+    
+        var popup_de2c8a02761863b88ec882e2d7570eff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a4f7717bfc82cdb02e6c92325d43bb7 = $(`<div id="html_3a4f7717bfc82cdb02e6c92325d43bb7" style="width: 100.0%; height: 100.0%;"><b>괴산군</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 7: 2024-11-02 : 부추<br>ID 15: 2024-10-16 : 배추<br></div>`)[0];
+                popup_de2c8a02761863b88ec882e2d7570eff.setContent(html_3a4f7717bfc82cdb02e6c92325d43bb7);
+            
+        
+
+        marker_9261596447b309c20fff91e08dc69c82.bindPopup(popup_de2c8a02761863b88ec882e2d7570eff)
+        ;
+
+        
+    
+    
+            marker_9261596447b309c20fff91e08dc69c82.bindTooltip(
+                `<div>
+                     괴산군 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9ff16cf4e89165a82bed8ef6b28f1fda = L.marker(
+                [36.9907334, 127.9259891],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_b73e760eb127d3c49d0b70ac8a9ba5c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ff16cf4e89165a82bed8ef6b28f1fda.setIcon(icon_b73e760eb127d3c49d0b70ac8a9ba5c4);
+        
+    
+        var popup_727d1ec7d60393a98f87e003aafe17f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce3dfe73202cf9d7a9998ef3a0ad5824 = $(`<div id="html_ce3dfe73202cf9d7a9998ef3a0ad5824" style="width: 100.0%; height: 100.0%;"><b>충주시</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 6: 2024-11-12 : 레드향<br>ID 32: 2024-08-16 : 사과<br></div>`)[0];
+                popup_727d1ec7d60393a98f87e003aafe17f5.setContent(html_ce3dfe73202cf9d7a9998ef3a0ad5824);
+            
+        
+
+        marker_9ff16cf4e89165a82bed8ef6b28f1fda.bindPopup(popup_727d1ec7d60393a98f87e003aafe17f5)
+        ;
+
+        
+    
+    
+            marker_9ff16cf4e89165a82bed8ef6b28f1fda.bindTooltip(
+                `<div>
+                     충주시 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e10dfb1085d94606596dfa4e8af58189 = L.marker(
+                [36.4104478, 128.1590614],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_a7daee575927ead3a8ef3f11a8725935 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e10dfb1085d94606596dfa4e8af58189.setIcon(icon_a7daee575927ead3a8ef3f11a8725935);
+        
+    
+        var popup_bea0c9cbcc40ad53cc28e7304e930946 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1ba57950940228e12acddf2bd836707 = $(`<div id="html_f1ba57950940228e12acddf2bd836707" style="width: 100.0%; height: 100.0%;"><b>상주시</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 110: 2024-02-16 : 포도<br>ID 129: 2024-01-11 : 포도<br></div>`)[0];
+                popup_bea0c9cbcc40ad53cc28e7304e930946.setContent(html_f1ba57950940228e12acddf2bd836707);
+            
+        
+
+        marker_e10dfb1085d94606596dfa4e8af58189.bindPopup(popup_bea0c9cbcc40ad53cc28e7304e930946)
+        ;
+
+        
+    
+    
+            marker_e10dfb1085d94606596dfa4e8af58189.bindTooltip(
+                `<div>
+                     상주시 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_be06b156d26cb57fcc5136916d7a5500 = L.marker(
+                [34.96098918724115, 127.45455947409343],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_1f9d6c9b01e6c0bb7d8204cb9ef999b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_be06b156d26cb57fcc5136916d7a5500.setIcon(icon_1f9d6c9b01e6c0bb7d8204cb9ef999b1);
+        
+    
+        var popup_7f2e972e13b917ce4589488255d6fa1a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e97f8707f3ea22910ad463d2adeaee1 = $(`<div id="html_3e97f8707f3ea22910ad463d2adeaee1" style="width: 100.0%; height: 100.0%;"><b>옥천</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 81: 2024-04-30 : 복숭아/사과<br>ID 116: 2024-01-26 : 마늘<br></div>`)[0];
+                popup_7f2e972e13b917ce4589488255d6fa1a.setContent(html_3e97f8707f3ea22910ad463d2adeaee1);
+            
+        
+
+        marker_be06b156d26cb57fcc5136916d7a5500.bindPopup(popup_7f2e972e13b917ce4589488255d6fa1a)
+        ;
+
+        
+    
+    
+            marker_be06b156d26cb57fcc5136916d7a5500.bindTooltip(
+                `<div>
+                     옥천 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a390f288fb7b55f2c3eefaeef266f2a = L.marker(
+                [36.6010501, 126.6611667],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_95429fea64aa75e36405759d2a97f8dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6a390f288fb7b55f2c3eefaeef266f2a.setIcon(icon_95429fea64aa75e36405759d2a97f8dd);
+        
+    
+        var popup_65ad215dc09688406f003f72e3b38ad3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25e3f6e9d451037ce98809a7a4fe199f = $(`<div id="html_25e3f6e9d451037ce98809a7a4fe199f" style="width: 100.0%; height: 100.0%;"><b>홍성군</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 21: 2024-09-04 : 쪽파<br>ID 92: 2024-04-05 : 쪽파/열무<br></div>`)[0];
+                popup_65ad215dc09688406f003f72e3b38ad3.setContent(html_25e3f6e9d451037ce98809a7a4fe199f);
+            
+        
+
+        marker_6a390f288fb7b55f2c3eefaeef266f2a.bindPopup(popup_65ad215dc09688406f003f72e3b38ad3)
+        ;
+
+        
+    
+    
+            marker_6a390f288fb7b55f2c3eefaeef266f2a.bindTooltip(
+                `<div>
+                     홍성군 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_070d67614929b5ad30c48f0e28d2a62e = L.marker(
+                [37.6983221, 127.891168],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_fc6e7a63e4757be1b380709f9d68b82c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_070d67614929b5ad30c48f0e28d2a62e.setIcon(icon_fc6e7a63e4757be1b380709f9d68b82c);
+        
+    
+        var popup_8129f48366a28d77d18ce1771b1d1ad2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db3c16264186cd9051899b0c84722d76 = $(`<div id="html_db3c16264186cd9051899b0c84722d76" style="width: 100.0%; height: 100.0%;"><b>홍천</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 53: 2024-06-19 : 채소류<br>ID 60: 2024-06-10 : 채소류<br></div>`)[0];
+                popup_8129f48366a28d77d18ce1771b1d1ad2.setContent(html_db3c16264186cd9051899b0c84722d76);
+            
+        
+
+        marker_070d67614929b5ad30c48f0e28d2a62e.bindPopup(popup_8129f48366a28d77d18ce1771b1d1ad2)
+        ;
+
+        
+    
+    
+            marker_070d67614929b5ad30c48f0e28d2a62e.bindTooltip(
+                `<div>
+                     홍천 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9cfac44ed9fb790aa68c4f3dae15ea12 = L.marker(
+                [36.778052, 127.583969],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_f2704850b6b29636ade17359b77b8fe8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9cfac44ed9fb790aa68c4f3dae15ea12.setIcon(icon_f2704850b6b29636ade17359b77b8fe8);
+        
+    
+        var popup_5ab488b43b78741180a13dbac579855c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92ee7be5d4ca0c25d8d6f8636d8bd06a = $(`<div id="html_92ee7be5d4ca0c25d8d6f8636d8bd06a" style="width: 100.0%; height: 100.0%;"><b>증평</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 45: 2024-07-13 : 부추<br>ID 87: 2024-04-12 : 부추<br></div>`)[0];
+                popup_5ab488b43b78741180a13dbac579855c.setContent(html_92ee7be5d4ca0c25d8d6f8636d8bd06a);
+            
+        
+
+        marker_9cfac44ed9fb790aa68c4f3dae15ea12.bindPopup(popup_5ab488b43b78741180a13dbac579855c)
+        ;
+
+        
+    
+    
+            marker_9cfac44ed9fb790aa68c4f3dae15ea12.bindTooltip(
+                `<div>
+                     증평 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3af14de847ea0f54a5de7f8910834e58 = L.marker(
+                [33.4998289, 126.5313902],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_df74adae49137f8dcec9639270aeec41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3af14de847ea0f54a5de7f8910834e58.setIcon(icon_df74adae49137f8dcec9639270aeec41);
+        
+    
+        var popup_a3f12beec71833e64895954f0b865913 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f92e23b71fbb1bcf2ad6802d9c840299 = $(`<div id="html_f92e23b71fbb1bcf2ad6802d9c840299" style="width: 100.0%; height: 100.0%;"><b>제주시</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 9: 2024-10-23 : 채소류<br>ID 10: 2024-10-15 : 감귤<br></div>`)[0];
+                popup_a3f12beec71833e64895954f0b865913.setContent(html_f92e23b71fbb1bcf2ad6802d9c840299);
+            
+        
+
+        marker_3af14de847ea0f54a5de7f8910834e58.bindPopup(popup_a3f12beec71833e64895954f0b865913)
+        ;
+
+        
+    
+    
+            marker_3af14de847ea0f54a5de7f8910834e58.bindTooltip(
+                `<div>
+                     제주시 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f47c720fa33569ebe24a446d15696760 = L.marker(
+                [34.55269, 126.52431],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_cac61854611d0422a2ec0239f1015814 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f47c720fa33569ebe24a446d15696760.setIcon(icon_cac61854611d0422a2ec0239f1015814);
+        
+    
+        var popup_927454cf488e78ff236f8889756ab22c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c129d0a139c2c8a44bf685d58fae6fa = $(`<div id="html_8c129d0a139c2c8a44bf685d58fae6fa" style="width: 100.0%; height: 100.0%;"><b>해남군</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 16: 2024-10-14 : 배추<br>ID 124: 2024-01-17 : 봄동<br></div>`)[0];
+                popup_927454cf488e78ff236f8889756ab22c.setContent(html_8c129d0a139c2c8a44bf685d58fae6fa);
+            
+        
+
+        marker_f47c720fa33569ebe24a446d15696760.bindPopup(popup_927454cf488e78ff236f8889756ab22c)
+        ;
+
+        
+    
+    
+            marker_f47c720fa33569ebe24a446d15696760.bindTooltip(
+                `<div>
+                     해남군 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a09ae72d80d1d436e8f5c22a7ec1b43 = L.marker(
+                [37.5619574, 128.4300343],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_63335526a5bcc2d5e59c32e6b1160811 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a09ae72d80d1d436e8f5c22a7ec1b43.setIcon(icon_63335526a5bcc2d5e59c32e6b1160811);
+        
+    
+        var popup_29413e3df24d05c8e1f07ad48ee39f73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_967ecc09fdc6c6d35d4b7d62b0f6c8bb = $(`<div id="html_967ecc09fdc6c6d35d4b7d62b0f6c8bb" style="width: 100.0%; height: 100.0%;"><b>평창</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 3: 2024-11-14 : 감자<br>ID 46: 2024-06-28 : 감자<br></div>`)[0];
+                popup_29413e3df24d05c8e1f07ad48ee39f73.setContent(html_967ecc09fdc6c6d35d4b7d62b0f6c8bb);
+            
+        
+
+        marker_7a09ae72d80d1d436e8f5c22a7ec1b43.bindPopup(popup_29413e3df24d05c8e1f07ad48ee39f73)
+        ;
+
+        
+    
+    
+            marker_7a09ae72d80d1d436e8f5c22a7ec1b43.bindTooltip(
+                `<div>
+                     평창 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_812d5ee1745bd75d0a8962386396f795 = L.marker(
+                [35.647, 127.5212],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_ba3c872fdff62044e23e59501e58f281 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_812d5ee1745bd75d0a8962386396f795.setIcon(icon_ba3c872fdff62044e23e59501e58f281);
+        
+    
+        var popup_65b3cc22e912d956608132feb0183c3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_270655fcad18da660156c986e69d333b = $(`<div id="html_270655fcad18da660156c986e69d333b" style="width: 100.0%; height: 100.0%;"><b>장수군</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 28: 2024-08-20 : 사과<br>ID 30: 2024-08-20 : 사과<br></div>`)[0];
+                popup_65b3cc22e912d956608132feb0183c3e.setContent(html_270655fcad18da660156c986e69d333b);
+            
+        
+
+        marker_812d5ee1745bd75d0a8962386396f795.bindPopup(popup_65b3cc22e912d956608132feb0183c3e)
+        ;
+
+        
+    
+    
+            marker_812d5ee1745bd75d0a8962386396f795.bindTooltip(
+                `<div>
+                     장수군 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_349bc9dd0ec85543231c5f9054bbd762 = L.marker(
+                [36.805685, 128.624054],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_7dbb5c58a0fa1fd667c1ebfb38132e82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_349bc9dd0ec85543231c5f9054bbd762.setIcon(icon_7dbb5c58a0fa1fd667c1ebfb38132e82);
+        
+    
+        var popup_9e53581ad1d3992afe73e9fad3d57e77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1eabefeffbd9ccaf433679353f081781 = $(`<div id="html_1eabefeffbd9ccaf433679353f081781" style="width: 100.0%; height: 100.0%;"><b>영주시</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 35: 2024-08-14 : 사과<br>ID 47: 2024-06-27 : 생강<br></div>`)[0];
+                popup_9e53581ad1d3992afe73e9fad3d57e77.setContent(html_1eabefeffbd9ccaf433679353f081781);
+            
+        
+
+        marker_349bc9dd0ec85543231c5f9054bbd762.bindPopup(popup_9e53581ad1d3992afe73e9fad3d57e77)
+        ;
+
+        
+    
+    
+            marker_349bc9dd0ec85543231c5f9054bbd762.bindTooltip(
+                `<div>
+                     영주시 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8169b35161e8b8d6d8acf8d7a44cf348 = L.marker(
+                [36.8904083, 126.6461833],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_05b4892690cc0616d9c8479f92fcaf76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8169b35161e8b8d6d8acf8d7a44cf348.setIcon(icon_05b4892690cc0616d9c8479f92fcaf76);
+        
+    
+        var popup_c727ba256fa488ed36fc6cfd2206fdd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82437ca2debc46699a89879d2006f632 = $(`<div id="html_82437ca2debc46699a89879d2006f632" style="width: 100.0%; height: 100.0%;"><b>당진시</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 67: 2024-05-28 : 감자<br>ID 120: 2024-01-16 : 사과/배<br></div>`)[0];
+                popup_c727ba256fa488ed36fc6cfd2206fdd5.setContent(html_82437ca2debc46699a89879d2006f632);
+            
+        
+
+        marker_8169b35161e8b8d6d8acf8d7a44cf348.bindPopup(popup_c727ba256fa488ed36fc6cfd2206fdd5)
+        ;
+
+        
+    
+    
+            marker_8169b35161e8b8d6d8acf8d7a44cf348.bindTooltip(
+                `<div>
+                     당진시 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eac1690ba1a20515f67e3b5af060d106 = L.marker(
+                [35.6872871, 127.9138505],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_d4b71510956abcc5bbd7dcd9021898f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eac1690ba1a20515f67e3b5af060d106.setIcon(icon_d4b71510956abcc5bbd7dcd9021898f7);
+        
+    
+        var popup_3ac3453ea955f966ff72e7b3713ea421 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccaf0f69ce2dfade28dfb2420dcd3090 = $(`<div id="html_ccaf0f69ce2dfade28dfb2420dcd3090" style="width: 100.0%; height: 100.0%;"><b>거창군</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 27: 2024-08-20 : 사과<br>ID 29: 2024-08-20 : 사과<br></div>`)[0];
+                popup_3ac3453ea955f966ff72e7b3713ea421.setContent(html_ccaf0f69ce2dfade28dfb2420dcd3090);
+            
+        
+
+        marker_eac1690ba1a20515f67e3b5af060d106.bindPopup(popup_3ac3453ea955f966ff72e7b3713ea421)
+        ;
+
+        
+    
+    
+            marker_eac1690ba1a20515f67e3b5af060d106.bindTooltip(
+                `<div>
+                     거창군 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3206bb1aa81875b0b7f988f2906e74e5 = L.marker(
+                [37.0133605, 127.1448885],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_11e35c70345a364b9d0826c340ee7ef5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3206bb1aa81875b0b7f988f2906e74e5.setIcon(icon_11e35c70345a364b9d0826c340ee7ef5);
+        
+    
+        var popup_64b588dd71c263f5c1c5fe4c02a2db44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49394204b74c7f94bdb9a5ee5fdccbf6 = $(`<div id="html_49394204b74c7f94bdb9a5ee5fdccbf6" style="width: 100.0%; height: 100.0%;"><b>안성</b><br>방문 횟수: 2회<br><br>방문 내역:<br>ID 25: 2024-08-28 : 배<br>ID 123: 2024-01-17 : 배<br></div>`)[0];
+                popup_64b588dd71c263f5c1c5fe4c02a2db44.setContent(html_49394204b74c7f94bdb9a5ee5fdccbf6);
+            
+        
+
+        marker_3206bb1aa81875b0b7f988f2906e74e5.bindPopup(popup_64b588dd71c263f5c1c5fe4c02a2db44)
+        ;
+
+        
+    
+    
+            marker_3206bb1aa81875b0b7f988f2906e74e5.bindTooltip(
+                `<div>
+                     안성 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7effb77c7c1e817bced92978fa01e15f = L.marker(
+                [35.8138089, 128.5226535],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_a991f1e76f6c140556a78f9825f80a21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7effb77c7c1e817bced92978fa01e15f.setIcon(icon_a991f1e76f6c140556a78f9825f80a21);
+        
+    
+        var popup_8e32573494a157cb870acb0a3684436e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67f0e83434d532d90461a9f83126a62d = $(`<div id="html_67f0e83434d532d90461a9f83126a62d" style="width: 100.0%; height: 100.0%;"><b>진천</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 2: 2024-11-22 : 오이<br></div>`)[0];
+                popup_8e32573494a157cb870acb0a3684436e.setContent(html_67f0e83434d532d90461a9f83126a62d);
+            
+        
+
+        marker_7effb77c7c1e817bced92978fa01e15f.bindPopup(popup_8e32573494a157cb870acb0a3684436e)
+        ;
+
+        
+    
+    
+            marker_7effb77c7c1e817bced92978fa01e15f.bindTooltip(
+                `<div>
+                     진천 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_81581c7a976fa77223ac4208c7c1f323 = L.marker(
+                [35.0670735, 127.7516778],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_d3f18ed1b4d5c41448689aeeef828f83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_81581c7a976fa77223ac4208c7c1f323.setIcon(icon_d3f18ed1b4d5c41448689aeeef828f83);
+        
+    
+        var popup_ac075d894872041cb062e91cb0721f40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_136c60cce33117d6c421aa501d7c4392 = $(`<div id="html_136c60cce33117d6c421aa501d7c4392" style="width: 100.0%; height: 100.0%;"><b>하동군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 4: 2024-11-15 : 딸기<br></div>`)[0];
+                popup_ac075d894872041cb062e91cb0721f40.setContent(html_136c60cce33117d6c421aa501d7c4392);
+            
+        
+
+        marker_81581c7a976fa77223ac4208c7c1f323.bindPopup(popup_ac075d894872041cb062e91cb0721f40)
+        ;
+
+        
+    
+    
+            marker_81581c7a976fa77223ac4208c7c1f323.bindTooltip(
+                `<div>
+                     하동군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5dc58da1a938d7f25b4ea7e8d45b756e = L.marker(
+                [34.8374437, 127.8925589],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_688f1eb79b40d62a18b0214e28e385e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5dc58da1a938d7f25b4ea7e8d45b756e.setIcon(icon_688f1eb79b40d62a18b0214e28e385e2);
+        
+    
+        var popup_4ea386bb8f91f5533315061310447d55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3cae4d6e81accb5b2762afc1b6312fd = $(`<div id="html_a3cae4d6e81accb5b2762afc1b6312fd" style="width: 100.0%; height: 100.0%;"><b>남해</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 18: 2024-10-02 : 마늘/갓<br></div>`)[0];
+                popup_4ea386bb8f91f5533315061310447d55.setContent(html_a3cae4d6e81accb5b2762afc1b6312fd);
+            
+        
+
+        marker_5dc58da1a938d7f25b4ea7e8d45b756e.bindPopup(popup_4ea386bb8f91f5533315061310447d55)
+        ;
+
+        
+    
+    
+            marker_5dc58da1a938d7f25b4ea7e8d45b756e.bindTooltip(
+                `<div>
+                     남해 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c16011e29f57aec03ac68301af1719ec = L.marker(
+                [37.5178778, 126.5214972],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_86b112ccaaf550a559a794b439f69216 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c16011e29f57aec03ac68301af1719ec.setIcon(icon_86b112ccaaf550a559a794b439f69216);
+        
+    
+        var popup_b0954e029861c803fa4b66f6d5a31bd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ae1bfabae412f309c9a3ff444a7af66 = $(`<div id="html_5ae1bfabae412f309c9a3ff444a7af66" style="width: 100.0%; height: 100.0%;"><b>금산</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 14: 2024-10-21 : 마늘/생강<br></div>`)[0];
+                popup_b0954e029861c803fa4b66f6d5a31bd5.setContent(html_5ae1bfabae412f309c9a3ff444a7af66);
+            
+        
+
+        marker_c16011e29f57aec03ac68301af1719ec.bindPopup(popup_b0954e029861c803fa4b66f6d5a31bd5)
+        ;
+
+        
+    
+    
+            marker_c16011e29f57aec03ac68301af1719ec.bindTooltip(
+                `<div>
+                     금산 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dae548ca381cc56fa28272857606e935 = L.marker(
+                [36.6421169, 127.4891742],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_b59a72fb2aba2421081f1e4380ee6d74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dae548ca381cc56fa28272857606e935.setIcon(icon_b59a72fb2aba2421081f1e4380ee6d74);
+        
+    
+        var popup_b960542473edb137a2cb8f31fd9ea8ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfe28a77761663b7c1d88fd02b4532b2 = $(`<div id="html_cfe28a77761663b7c1d88fd02b4532b2" style="width: 100.0%; height: 100.0%;"><b>청주시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 8: 2024-10-30 : 딸기<br></div>`)[0];
+                popup_b960542473edb137a2cb8f31fd9ea8ed.setContent(html_cfe28a77761663b7c1d88fd02b4532b2);
+            
+        
+
+        marker_dae548ca381cc56fa28272857606e935.bindPopup(popup_b960542473edb137a2cb8f31fd9ea8ed)
+        ;
+
+        
+    
+    
+            marker_dae548ca381cc56fa28272857606e935.bindTooltip(
+                `<div>
+                     청주시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_369a1c441a1518cb726de07d7d7300ac = L.marker(
+                [35.4154624, 127.873663],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_e8a3044792887ddd953f9f7394fbbfca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_369a1c441a1518cb726de07d7d7300ac.setIcon(icon_e8a3044792887ddd953f9f7394fbbfca);
+        
+    
+        var popup_c00fe816c9b8f30c495f041e65a8880f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74d40461263e6075dc6e4f4db1f77a4b = $(`<div id="html_74d40461263e6075dc6e4f4db1f77a4b" style="width: 100.0%; height: 100.0%;"><b>산청군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 11: 2024-10-23 : 딸기<br></div>`)[0];
+                popup_c00fe816c9b8f30c495f041e65a8880f.setContent(html_74d40461263e6075dc6e4f4db1f77a4b);
+            
+        
+
+        marker_369a1c441a1518cb726de07d7d7300ac.bindPopup(popup_c00fe816c9b8f30c495f041e65a8880f)
+        ;
+
+        
+    
+    
+            marker_369a1c441a1518cb726de07d7d7300ac.bindTooltip(
+                `<div>
+                     산청군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c52bc00646fd3b3818a363acf3995c8d = L.marker(
+                [36.47257, 127.09124],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_e119c630bd82efd90ee9d68bb8faebe1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c52bc00646fd3b3818a363acf3995c8d.setIcon(icon_e119c630bd82efd90ee9d68bb8faebe1);
+        
+    
+        var popup_767e53d72b247f2fa64dcc7ea54d6a15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9eda96df442e3fb4cbe4eb8fa7c8547e = $(`<div id="html_9eda96df442e3fb4cbe4eb8fa7c8547e" style="width: 100.0%; height: 100.0%;"><b>공주시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 43: 2024-07-23 : 양파<br></div>`)[0];
+                popup_767e53d72b247f2fa64dcc7ea54d6a15.setContent(html_9eda96df442e3fb4cbe4eb8fa7c8547e);
+            
+        
+
+        marker_c52bc00646fd3b3818a363acf3995c8d.bindPopup(popup_767e53d72b247f2fa64dcc7ea54d6a15)
+        ;
+
+        
+    
+    
+            marker_c52bc00646fd3b3818a363acf3995c8d.bindTooltip(
+                `<div>
+                     공주시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c89a3a3d7af168855d9fbd6ecb13e4de = L.marker(
+                [37.6871232, 128.7604146],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_44d0d06d5be417c30192712d4c9da449 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c89a3a3d7af168855d9fbd6ecb13e4de.setIcon(icon_44d0d06d5be417c30192712d4c9da449);
+        
+    
+        var popup_9d5378826d357178a66fa5582017841b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43e1802a2f8a1d9864b873c672cb36cc = $(`<div id="html_43e1802a2f8a1d9864b873c672cb36cc" style="width: 100.0%; height: 100.0%;"><b>대관령</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 42: 2024-07-31 : 채소류<br></div>`)[0];
+                popup_9d5378826d357178a66fa5582017841b.setContent(html_43e1802a2f8a1d9864b873c672cb36cc);
+            
+        
+
+        marker_c89a3a3d7af168855d9fbd6ecb13e4de.bindPopup(popup_9d5378826d357178a66fa5582017841b)
+        ;
+
+        
+    
+    
+            marker_c89a3a3d7af168855d9fbd6ecb13e4de.bindTooltip(
+                `<div>
+                     대관령 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ab252ee898d2328ffc3bd722a3841ff4 = L.marker(
+                [37.4916, 127.985],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_5f3050592c1ae24818471ee8e6b7ac4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ab252ee898d2328ffc3bd722a3841ff4.setIcon(icon_5f3050592c1ae24818471ee8e6b7ac4e);
+        
+    
+        var popup_de9bcb5127e6fad66d044fcc21455f22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2fa66faae85d79db16cf53dd0d012fc = $(`<div id="html_f2fa66faae85d79db16cf53dd0d012fc" style="width: 100.0%; height: 100.0%;"><b>횡성군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 40: 2024-07-30 : 고추,옥수수,쪽파<br></div>`)[0];
+                popup_de9bcb5127e6fad66d044fcc21455f22.setContent(html_f2fa66faae85d79db16cf53dd0d012fc);
+            
+        
+
+        marker_ab252ee898d2328ffc3bd722a3841ff4.bindPopup(popup_de9bcb5127e6fad66d044fcc21455f22)
+        ;
+
+        
+    
+    
+            marker_ab252ee898d2328ffc3bd722a3841ff4.bindTooltip(
+                `<div>
+                     횡성군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86ba79ea562d8abe661b1c69b7acbf3f = L.marker(
+                [35.5092935, 129.1434688],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_597a5b96aced7e26e0b29d170b623ec0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_86ba79ea562d8abe661b1c69b7acbf3f.setIcon(icon_597a5b96aced7e26e0b29d170b623ec0);
+        
+    
+        var popup_3843c4557298eaf5d9dacf17c7c75658 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8eea3760afa9a633529420b9520736ff = $(`<div id="html_8eea3760afa9a633529420b9520736ff" style="width: 100.0%; height: 100.0%;"><b>보은</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 52: 2024-06-22 : 오이<br></div>`)[0];
+                popup_3843c4557298eaf5d9dacf17c7c75658.setContent(html_8eea3760afa9a633529420b9520736ff);
+            
+        
+
+        marker_86ba79ea562d8abe661b1c69b7acbf3f.bindPopup(popup_3843c4557298eaf5d9dacf17c7c75658)
+        ;
+
+        
+    
+    
+            marker_86ba79ea562d8abe661b1c69b7acbf3f.bindTooltip(
+                `<div>
+                     보은 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4cc6e192baebaabf1dfe5be3616fc735 = L.marker(
+                [35.7258, 128.2632],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_7aee7925cbd76efe6f8c00244382a953 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4cc6e192baebaabf1dfe5be3616fc735.setIcon(icon_7aee7925cbd76efe6f8c00244382a953);
+        
+    
+        var popup_40e74c0491759a7c2b8b94bef307d87e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_646f66554fa5c736193173f8ccc138c2 = $(`<div id="html_646f66554fa5c736193173f8ccc138c2" style="width: 100.0%; height: 100.0%;"><b>고령군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 55: 2024-06-18 : 양파<br></div>`)[0];
+                popup_40e74c0491759a7c2b8b94bef307d87e.setContent(html_646f66554fa5c736193173f8ccc138c2);
+            
+        
+
+        marker_4cc6e192baebaabf1dfe5be3616fc735.bindPopup(popup_40e74c0491759a7c2b8b94bef307d87e)
+        ;
+
+        
+    
+    
+            marker_4cc6e192baebaabf1dfe5be3616fc735.bindTooltip(
+                `<div>
+                     고령군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a03b30864eb4dc4615212a6af0976550 = L.marker(
+                [36.3497007, 127.3849016],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_8a9c4107d10ed1856a7c708bb61b3ee6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a03b30864eb4dc4615212a6af0976550.setIcon(icon_8a9c4107d10ed1856a7c708bb61b3ee6);
+        
+    
+        var popup_35d9e47d51b13ac32a42ae401aa6b873 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca08a8bedb4c0175c8d84e1840780de9 = $(`<div id="html_ca08a8bedb4c0175c8d84e1840780de9" style="width: 100.0%; height: 100.0%;"><b>대전시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 57: 2024-06-07 : 포도<br></div>`)[0];
+                popup_35d9e47d51b13ac32a42ae401aa6b873.setContent(html_ca08a8bedb4c0175c8d84e1840780de9);
+            
+        
+
+        marker_a03b30864eb4dc4615212a6af0976550.bindPopup(popup_35d9e47d51b13ac32a42ae401aa6b873)
+        ;
+
+        
+    
+    
+            marker_a03b30864eb4dc4615212a6af0976550.bindTooltip(
+                `<div>
+                     대전시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7bee2bd45be694a1653b3f3da107c3ca = L.marker(
+                [34.6044123, 127.276384],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_fefacd8b51ceaab24ec23b286882e13f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7bee2bd45be694a1653b3f3da107c3ca.setIcon(icon_fefacd8b51ceaab24ec23b286882e13f);
+        
+    
+        var popup_3c89febdb5b3546cd703646187fc9145 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ef7d7863c351f5cba5af44111bc295a = $(`<div id="html_9ef7d7863c351f5cba5af44111bc295a" style="width: 100.0%; height: 100.0%;"><b>고흥군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 59: 2024-04-02 : 양파<br></div>`)[0];
+                popup_3c89febdb5b3546cd703646187fc9145.setContent(html_9ef7d7863c351f5cba5af44111bc295a);
+            
+        
+
+        marker_7bee2bd45be694a1653b3f3da107c3ca.bindPopup(popup_3c89febdb5b3546cd703646187fc9145)
+        ;
+
+        
+    
+    
+            marker_7bee2bd45be694a1653b3f3da107c3ca.bindTooltip(
+                `<div>
+                     고흥군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c57c7e12f3aea34d5958102c6b0a6af4 = L.marker(
+                [36.5634886, 128.7260798],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_d25a98a2b5715ea1eb2a3f68f76e629d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c57c7e12f3aea34d5958102c6b0a6af4.setIcon(icon_d25a98a2b5715ea1eb2a3f68f76e629d);
+        
+    
+        var popup_11b2537770f3aee412c0a313b0c2b089 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0edff4c6c35a07c45e0bdfe24e7384be = $(`<div id="html_0edff4c6c35a07c45e0bdfe24e7384be" style="width: 100.0%; height: 100.0%;"><b>안동시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 34: 2024-08-14 : 사과<br></div>`)[0];
+                popup_11b2537770f3aee412c0a313b0c2b089.setContent(html_0edff4c6c35a07c45e0bdfe24e7384be);
+            
+        
+
+        marker_c57c7e12f3aea34d5958102c6b0a6af4.bindPopup(popup_11b2537770f3aee412c0a313b0c2b089)
+        ;
+
+        
+    
+    
+            marker_c57c7e12f3aea34d5958102c6b0a6af4.bindTooltip(
+                `<div>
+                     안동시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b753705c2a0ad3dffaaf9a62838291b3 = L.marker(
+                [37.4900614, 127.009991],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_871f279009a08216f195042230279497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b753705c2a0ad3dffaaf9a62838291b3.setIcon(icon_871f279009a08216f195042230279497);
+        
+    
+        var popup_472e63155275d3ddc6b5356749e78d5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_668703e775894d018efd9ce0ec6117ca = $(`<div id="html_668703e775894d018efd9ce0ec6117ca" style="width: 100.0%; height: 100.0%;"><b>완주</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 33: 2024-08-14 : 양파<br></div>`)[0];
+                popup_472e63155275d3ddc6b5356749e78d5c.setContent(html_668703e775894d018efd9ce0ec6117ca);
+            
+        
+
+        marker_b753705c2a0ad3dffaaf9a62838291b3.bindPopup(popup_472e63155275d3ddc6b5356749e78d5c)
+        ;
+
+        
+    
+    
+            marker_b753705c2a0ad3dffaaf9a62838291b3.bindTooltip(
+                `<div>
+                     완주 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6b908876567e99bce6b2b98e26a2719e = L.marker(
+                [36.1087249, 127.48815],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_adc0420b77682444b6b5ee75ee19c751 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6b908876567e99bce6b2b98e26a2719e.setIcon(icon_adc0420b77682444b6b5ee75ee19c751);
+        
+    
+        var popup_91751f4fee42115b6141fe696737ca5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9698f667bb09187a41519cffbf23b73 = $(`<div id="html_a9698f667bb09187a41519cffbf23b73" style="width: 100.0%; height: 100.0%;"><b>금산군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 51: 2024-06-24 : 포도<br></div>`)[0];
+                popup_91751f4fee42115b6141fe696737ca5c.setContent(html_a9698f667bb09187a41519cffbf23b73);
+            
+        
+
+        marker_6b908876567e99bce6b2b98e26a2719e.bindPopup(popup_91751f4fee42115b6141fe696737ca5c)
+        ;
+
+        
+    
+    
+            marker_6b908876567e99bce6b2b98e26a2719e.bindTooltip(
+                `<div>
+                     금산군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f707b46aa5282f761f795be334cdac0b = L.marker(
+                [36.3061692, 127.571482],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_1abe4a3ce76ddd3f83daea6d2dae979f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f707b46aa5282f761f795be334cdac0b.setIcon(icon_1abe4a3ce76ddd3f83daea6d2dae979f);
+        
+    
+        var popup_7262eb73aa295f48a1c53274353fabf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f1ce2ff6b8047a7646d8062f52a1b68 = $(`<div id="html_7f1ce2ff6b8047a7646d8062f52a1b68" style="width: 100.0%; height: 100.0%;"><b>옥천군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 54: 2024-06-19 : 복숭아<br></div>`)[0];
+                popup_7262eb73aa295f48a1c53274353fabf4.setContent(html_7f1ce2ff6b8047a7646d8062f52a1b68);
+            
+        
+
+        marker_f707b46aa5282f761f795be334cdac0b.bindPopup(popup_7262eb73aa295f48a1c53274353fabf4)
+        ;
+
+        
+    
+    
+            marker_f707b46aa5282f761f795be334cdac0b.bindTooltip(
+                `<div>
+                     옥천군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1511799a4ca76c1a7e9e03dd5cf69cbe = L.marker(
+                [37.2642411, 127.4422242],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_db5a76dd1eb70a7e700e29887187985f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1511799a4ca76c1a7e9e03dd5cf69cbe.setIcon(icon_db5a76dd1eb70a7e700e29887187985f);
+        
+    
+        var popup_6e439abf0524148a22a738f86b8a6f13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f7340732339e1162d6b6f4d5283f318 = $(`<div id="html_3f7340732339e1162d6b6f4d5283f318" style="width: 100.0%; height: 100.0%;"><b>이천</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 19: 2024-09-12 : 쪽파/열무/쌈채류<br></div>`)[0];
+                popup_6e439abf0524148a22a738f86b8a6f13.setContent(html_3f7340732339e1162d6b6f4d5283f318);
+            
+        
+
+        marker_1511799a4ca76c1a7e9e03dd5cf69cbe.bindPopup(popup_6e439abf0524148a22a738f86b8a6f13)
+        ;
+
+        
+    
+    
+            marker_1511799a4ca76c1a7e9e03dd5cf69cbe.bindTooltip(
+                `<div>
+                     이천 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b39bfc1c2f6611b1aebe292eb89e8313 = L.marker(
+                [36.7454236, 126.29836],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_0e5b972382bf045410f7da14f77a7242 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b39bfc1c2f6611b1aebe292eb89e8313.setIcon(icon_0e5b972382bf045410f7da14f77a7242);
+        
+    
+        var popup_22bf2d55c167f6534257267ce9c079af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e4b46c33f1b2a6fd250f8e1eadc8349 = $(`<div id="html_5e4b46c33f1b2a6fd250f8e1eadc8349" style="width: 100.0%; height: 100.0%;"><b>태안군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 65: 2024-06-03 : 봄무/알타리<br></div>`)[0];
+                popup_22bf2d55c167f6534257267ce9c079af.setContent(html_5e4b46c33f1b2a6fd250f8e1eadc8349);
+            
+        
+
+        marker_b39bfc1c2f6611b1aebe292eb89e8313.bindPopup(popup_22bf2d55c167f6534257267ce9c079af)
+        ;
+
+        
+    
+    
+            marker_b39bfc1c2f6611b1aebe292eb89e8313.bindTooltip(
+                `<div>
+                     태안군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8dceae46b4f2e2b05286bf06076f2252 = L.marker(
+                [35.4748507, 128.7714177],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_2c67dbee5e2a8ac9f54c1a8ffafd21cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8dceae46b4f2e2b05286bf06076f2252.setIcon(icon_2c67dbee5e2a8ac9f54c1a8ffafd21cd);
+        
+    
+        var popup_4b9da3c4b7658b1d312627de191c6e20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7a88f157252883f15b3ce8cc7b58916 = $(`<div id="html_c7a88f157252883f15b3ce8cc7b58916" style="width: 100.0%; height: 100.0%;"><b>밀양</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 63: 2024-06-13 : 연근/마늘<br></div>`)[0];
+                popup_4b9da3c4b7658b1d312627de191c6e20.setContent(html_c7a88f157252883f15b3ce8cc7b58916);
+            
+        
+
+        marker_8dceae46b4f2e2b05286bf06076f2252.bindPopup(popup_4b9da3c4b7658b1d312627de191c6e20)
+        ;
+
+        
+    
+    
+            marker_8dceae46b4f2e2b05286bf06076f2252.bindTooltip(
+                `<div>
+                     밀양 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ba782871364ae3e335a251a66d9fa52f = L.marker(
+                [34.7546257, 127.659859],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_85e4ff1156e35831a16f258d697be040 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ba782871364ae3e335a251a66d9fa52f.setIcon(icon_85e4ff1156e35831a16f258d697be040);
+        
+    
+        var popup_f1faddbaa0f583cf02b2f082306dce65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f4b6085429c503f64e454e3491e5750 = $(`<div id="html_1f4b6085429c503f64e454e3491e5750" style="width: 100.0%; height: 100.0%;"><b>여수시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 62: 2024-06-13 : 옥수수<br></div>`)[0];
+                popup_f1faddbaa0f583cf02b2f082306dce65.setContent(html_1f4b6085429c503f64e454e3491e5750);
+            
+        
+
+        marker_ba782871364ae3e335a251a66d9fa52f.bindPopup(popup_f1faddbaa0f583cf02b2f082306dce65)
+        ;
+
+        
+    
+    
+            marker_ba782871364ae3e335a251a66d9fa52f.bindTooltip(
+                `<div>
+                     여수시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c4bbe1f1a75393cfed873244834fea1 = L.marker(
+                [36.298677, 127.319813],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_b035181b77bf2d577b174016f59c3a91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8c4bbe1f1a75393cfed873244834fea1.setIcon(icon_b035181b77bf2d577b174016f59c3a91);
+        
+    
+        var popup_324cd640eadb3efb9aa8fc4e07276764 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64604564af8b21422575ae1e89705f4e = $(`<div id="html_64604564af8b21422575ae1e89705f4e" style="width: 100.0%; height: 100.0%;"><b>진잠농협</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 61: 2024-06-10 : 포도<br></div>`)[0];
+                popup_324cd640eadb3efb9aa8fc4e07276764.setContent(html_64604564af8b21422575ae1e89705f4e);
+            
+        
+
+        marker_8c4bbe1f1a75393cfed873244834fea1.bindPopup(popup_324cd640eadb3efb9aa8fc4e07276764)
+        ;
+
+        
+    
+    
+            marker_8c4bbe1f1a75393cfed873244834fea1.bindTooltip(
+                `<div>
+                     진잠농협 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c5e9a5f144a2ae0feeb5f990b2e4e6da = L.marker(
+                [36.2753678, 126.910107],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_15069a19e01bf1ca6a979b27d62a32a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c5e9a5f144a2ae0feeb5f990b2e4e6da.setIcon(icon_15069a19e01bf1ca6a979b27d62a32a2);
+        
+    
+        var popup_2ab60791d4d133c81b4a5e8f640a6b13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6bd9a460bc0f6bfebb73aab94a50742 = $(`<div id="html_c6bd9a460bc0f6bfebb73aab94a50742" style="width: 100.0%; height: 100.0%;"><b>부여군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 58: 2024-06-06 : 청양고추/오이맛고추<br></div>`)[0];
+                popup_2ab60791d4d133c81b4a5e8f640a6b13.setContent(html_c6bd9a460bc0f6bfebb73aab94a50742);
+            
+        
+
+        marker_c5e9a5f144a2ae0feeb5f990b2e4e6da.bindPopup(popup_2ab60791d4d133c81b4a5e8f640a6b13)
+        ;
+
+        
+    
+    
+            marker_c5e9a5f144a2ae0feeb5f990b2e4e6da.bindTooltip(
+                `<div>
+                     부여군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e687cfd5ba60ae7e66d24611607f81d2 = L.marker(
+                [36.023424, 126.700316],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_8e6f8feb0a3d256c8edf4fbfb691c9ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e687cfd5ba60ae7e66d24611607f81d2.setIcon(icon_8e6f8feb0a3d256c8edf4fbfb691c9ea);
+        
+    
+        var popup_d9ba501fdd7450f371945e65f79d59f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b27bbd487e64e6ee6474b68310412e1 = $(`<div id="html_3b27bbd487e64e6ee6474b68310412e1" style="width: 100.0%; height: 100.0%;"><b>성주</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 77: 2024-05-08 : 새송이버섯<br></div>`)[0];
+                popup_d9ba501fdd7450f371945e65f79d59f1.setContent(html_3b27bbd487e64e6ee6474b68310412e1);
+            
+        
+
+        marker_e687cfd5ba60ae7e66d24611607f81d2.bindPopup(popup_d9ba501fdd7450f371945e65f79d59f1)
+        ;
+
+        
+    
+    
+            marker_e687cfd5ba60ae7e66d24611607f81d2.bindTooltip(
+                `<div>
+                     성주 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2ee405941c109bb2bcb823d3d2be2721 = L.marker(
+                [37.7187055, 126.9415356],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_b7d2d29e8730f5e8a842e1da9cfc7b23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2ee405941c109bb2bcb823d3d2be2721.setIcon(icon_b7d2d29e8730f5e8a842e1da9cfc7b23);
+        
+    
+        var popup_c747a56c284204be21059cc2a155f324 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e19505807ea59a7309ed2a0b0d875c48 = $(`<div id="html_e19505807ea59a7309ed2a0b0d875c48" style="width: 100.0%; height: 100.0%;"><b>장흥</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 75: 2024-05-09 : 양파/감자/쪽파<br></div>`)[0];
+                popup_c747a56c284204be21059cc2a155f324.setContent(html_e19505807ea59a7309ed2a0b0d875c48);
+            
+        
+
+        marker_2ee405941c109bb2bcb823d3d2be2721.bindPopup(popup_c747a56c284204be21059cc2a155f324)
+        ;
+
+        
+    
+    
+            marker_2ee405941c109bb2bcb823d3d2be2721.bindTooltip(
+                `<div>
+                     장흥 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e6b896a4ea96968cfea6fcbda28de03c = L.marker(
+                [34.9458107, 127.5040597],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_49e3efe14ebc964509600cdd63bd369b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6b896a4ea96968cfea6fcbda28de03c.setIcon(icon_49e3efe14ebc964509600cdd63bd369b);
+        
+    
+        var popup_3cfbd3685ad2d1f574db2a2662619cdf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba1eeb02b18ee8b401a7b71a579cbb79 = $(`<div id="html_ba1eeb02b18ee8b401a7b71a579cbb79" style="width: 100.0%; height: 100.0%;"><b>순천</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 69: 2024-05-21 : 매실/참다래<br></div>`)[0];
+                popup_3cfbd3685ad2d1f574db2a2662619cdf.setContent(html_ba1eeb02b18ee8b401a7b71a579cbb79);
+            
+        
+
+        marker_e6b896a4ea96968cfea6fcbda28de03c.bindPopup(popup_3cfbd3685ad2d1f574db2a2662619cdf)
+        ;
+
+        
+    
+    
+            marker_e6b896a4ea96968cfea6fcbda28de03c.bindTooltip(
+                `<div>
+                     순천 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7140d80f1fa55d913b7875f042a82e03 = L.marker(
+                [35.1770278, 128.8152507],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_ef55d74c44641d5653b45caf440f0cbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7140d80f1fa55d913b7875f042a82e03.setIcon(icon_ef55d74c44641d5653b45caf440f0cbd);
+        
+    
+        var popup_6d007010ab9887651b62edb377befb1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_030619d14603778751bee4965178d011 = $(`<div id="html_030619d14603778751bee4965178d011" style="width: 100.0%; height: 100.0%;"><b>합천</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 80: 2024-04-30 : 파프리카<br></div>`)[0];
+                popup_6d007010ab9887651b62edb377befb1b.setContent(html_030619d14603778751bee4965178d011);
+            
+        
+
+        marker_7140d80f1fa55d913b7875f042a82e03.bindPopup(popup_6d007010ab9887651b62edb377befb1b)
+        ;
+
+        
+    
+    
+            marker_7140d80f1fa55d913b7875f042a82e03.bindTooltip(
+                `<div>
+                     합천 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_40857c821e9c1083bd55eb7f2684172b = L.marker(
+                [35.4355, 126.7021],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_d902eb50e774411a2ea55b7f435f8a12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_40857c821e9c1083bd55eb7f2684172b.setIcon(icon_d902eb50e774411a2ea55b7f435f8a12);
+        
+    
+        var popup_7e6e82c27cc57bcc0ef3db094d9cb276 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d04fbdb0e780939ed181146bb9258992 = $(`<div id="html_d04fbdb0e780939ed181146bb9258992" style="width: 100.0%; height: 100.0%;"><b>고창군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 79: 2024-05-03 : 알타리/쪽파<br></div>`)[0];
+                popup_7e6e82c27cc57bcc0ef3db094d9cb276.setContent(html_d04fbdb0e780939ed181146bb9258992);
+            
+        
+
+        marker_40857c821e9c1083bd55eb7f2684172b.bindPopup(popup_7e6e82c27cc57bcc0ef3db094d9cb276)
+        ;
+
+        
+    
+    
+            marker_40857c821e9c1083bd55eb7f2684172b.bindTooltip(
+                `<div>
+                     고창군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_73f1b7c9ae48df8ceebfb99ff801abd1 = L.marker(
+                [34.9905794, 126.4812377],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_ae39e6652d85da3978ab32947d5c3667 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_73f1b7c9ae48df8ceebfb99ff801abd1.setIcon(icon_ae39e6652d85da3978ab32947d5c3667);
+        
+    
+        var popup_1a5f65d4fd910245d43e76b337753f71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65375f3951a9f6a47b23e069c4704bf0 = $(`<div id="html_65375f3951a9f6a47b23e069c4704bf0" style="width: 100.0%; height: 100.0%;"><b>무안군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 83: 2024-04-29 : 감자<br></div>`)[0];
+                popup_1a5f65d4fd910245d43e76b337753f71.setContent(html_65375f3951a9f6a47b23e069c4704bf0);
+            
+        
+
+        marker_73f1b7c9ae48df8ceebfb99ff801abd1.bindPopup(popup_1a5f65d4fd910245d43e76b337753f71)
+        ;
+
+        
+    
+    
+            marker_73f1b7c9ae48df8ceebfb99ff801abd1.bindTooltip(
+                `<div>
+                     무안군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_555dbf7cf974a43ed419b1236abbee6f = L.marker(
+                [36.1726667, 127.7858142],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_e7b98720baebf4c21ec4cd9b83ee747c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_555dbf7cf974a43ed419b1236abbee6f.setIcon(icon_e7b98720baebf4c21ec4cd9b83ee747c);
+        
+    
+        var popup_fd395966b22401080b0f6f2401dafdf2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad87339cc38c08c58dc86437f99d3c47 = $(`<div id="html_ad87339cc38c08c58dc86437f99d3c47" style="width: 100.0%; height: 100.0%;"><b>영동</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 82: 2024-04-30 : 복숭아/사과<br></div>`)[0];
+                popup_fd395966b22401080b0f6f2401dafdf2.setContent(html_ad87339cc38c08c58dc86437f99d3c47);
+            
+        
+
+        marker_555dbf7cf974a43ed419b1236abbee6f.bindPopup(popup_fd395966b22401080b0f6f2401dafdf2)
+        ;
+
+        
+    
+    
+            marker_555dbf7cf974a43ed419b1236abbee6f.bindTooltip(
+                `<div>
+                     영동 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f51b8db0f58f70809ee3198f220a307d = L.marker(
+                [34.8331095, 126.3522531],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_82b7b9f7d7277024cb889f548a992bc1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f51b8db0f58f70809ee3198f220a307d.setIcon(icon_82b7b9f7d7277024cb889f548a992bc1);
+        
+    
+        var popup_1ffff1f45d5e42f57fe556880a5c6f2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e2240beced9fb2d6139914654875f6e = $(`<div id="html_7e2240beced9fb2d6139914654875f6e" style="width: 100.0%; height: 100.0%;"><b>신안군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 84: 2024-04-29 : 감자<br></div>`)[0];
+                popup_1ffff1f45d5e42f57fe556880a5c6f2b.setContent(html_7e2240beced9fb2d6139914654875f6e);
+            
+        
+
+        marker_f51b8db0f58f70809ee3198f220a307d.bindPopup(popup_1ffff1f45d5e42f57fe556880a5c6f2b)
+        ;
+
+        
+    
+    
+            marker_f51b8db0f58f70809ee3198f220a307d.bindTooltip(
+                `<div>
+                     신안군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11cad492bf99d298a1ea5e470ebf45d0 = L.marker(
+                [35.8713, 128.6018],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_16c6e6f7e0914911db2613bd4fd16b83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_11cad492bf99d298a1ea5e470ebf45d0.setIcon(icon_16c6e6f7e0914911db2613bd4fd16b83);
+        
+    
+        var popup_7b3f1c39bf897cc5cc6255b7b9b54120 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c260ce469ccdff7aa83ed9cf1df9c072 = $(`<div id="html_c260ce469ccdff7aa83ed9cf1df9c072" style="width: 100.0%; height: 100.0%;"><b>대구</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 88: 2024-04-12 : 수박<br></div>`)[0];
+                popup_7b3f1c39bf897cc5cc6255b7b9b54120.setContent(html_c260ce469ccdff7aa83ed9cf1df9c072);
+            
+        
+
+        marker_11cad492bf99d298a1ea5e470ebf45d0.bindPopup(popup_7b3f1c39bf897cc5cc6255b7b9b54120)
+        ;
+
+        
+    
+    
+            marker_11cad492bf99d298a1ea5e470ebf45d0.bindTooltip(
+                `<div>
+                     대구 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bd3ca6d8922b42c592502ce0f05fcf9b = L.marker(
+                [35.0638799, 127.7616118],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_2861df4750e012fbd369f276ecd444ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bd3ca6d8922b42c592502ce0f05fcf9b.setIcon(icon_2861df4750e012fbd369f276ecd444ea);
+        
+    
+        var popup_0dbd5633a94379712e741cd8ec040dd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c7bc53cbbc43709f89ef3c6d3436275 = $(`<div id="html_3c7bc53cbbc43709f89ef3c6d3436275" style="width: 100.0%; height: 100.0%;"><b>하동</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 73: 2024-05-10 : 산딸기/매실<br></div>`)[0];
+                popup_0dbd5633a94379712e741cd8ec040dd5.setContent(html_3c7bc53cbbc43709f89ef3c6d3436275);
+            
+        
+
+        marker_bd3ca6d8922b42c592502ce0f05fcf9b.bindPopup(popup_0dbd5633a94379712e741cd8ec040dd5)
+        ;
+
+        
+    
+    
+            marker_bd3ca6d8922b42c592502ce0f05fcf9b.bindTooltip(
+                `<div>
+                     하동 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e78b16482828f8056b327c711829ec16 = L.marker(
+                [36.1868154, 127.0987538],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_c972f41f2ccbcb80a53349676c16224c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e78b16482828f8056b327c711829ec16.setIcon(icon_c972f41f2ccbcb80a53349676c16224c);
+        
+    
+        var popup_7dc60c5de89990a8414d106ca6c95c2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eee4513898e360d8b541f3ad0d9e7724 = $(`<div id="html_eee4513898e360d8b541f3ad0d9e7724" style="width: 100.0%; height: 100.0%;"><b>논산시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 95: 2024-03-08 : 딸기/수박<br></div>`)[0];
+                popup_7dc60c5de89990a8414d106ca6c95c2f.setContent(html_eee4513898e360d8b541f3ad0d9e7724);
+            
+        
+
+        marker_e78b16482828f8056b327c711829ec16.bindPopup(popup_7dc60c5de89990a8414d106ca6c95c2f)
+        ;
+
+        
+    
+    
+            marker_e78b16482828f8056b327c711829ec16.bindTooltip(
+                `<div>
+                     논산시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d52aabaa6535f632d62640a82645e8bb = L.marker(
+                [35.2726875, 128.4065038],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_03b328b412f6fe173ab3b675e0afc634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d52aabaa6535f632d62640a82645e8bb.setIcon(icon_03b328b412f6fe173ab3b675e0afc634);
+        
+    
+        var popup_810f0b02993c96f034546d616d5601a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d8940b1ec874196c2a976ac9e07030d = $(`<div id="html_3d8940b1ec874196c2a976ac9e07030d" style="width: 100.0%; height: 100.0%;"><b>함안군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 91: 2024-04-09 : 수박<br></div>`)[0];
+                popup_810f0b02993c96f034546d616d5601a1.setContent(html_3d8940b1ec874196c2a976ac9e07030d);
+            
+        
+
+        marker_d52aabaa6535f632d62640a82645e8bb.bindPopup(popup_810f0b02993c96f034546d616d5601a1)
+        ;
+
+        
+    
+    
+            marker_d52aabaa6535f632d62640a82645e8bb.bindTooltip(
+                `<div>
+                     함안군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_198a873f95a144161b4f586cdf38a0cf = L.marker(
+                [35.7753, 128.4312],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_056dca9f9165218e6e7f50c193b31a7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_198a873f95a144161b4f586cdf38a0cf.setIcon(icon_056dca9f9165218e6e7f50c193b31a7f);
+        
+    
+        var popup_e68b16ae45b48e83fef0e7e2aa4a57ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f1b7a34f1f4590f5d1a77483dcdc58f = $(`<div id="html_3f1b7a34f1f4590f5d1a77483dcdc58f" style="width: 100.0%; height: 100.0%;"><b>달성군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 97: 2024-03-06 : 참외<br></div>`)[0];
+                popup_e68b16ae45b48e83fef0e7e2aa4a57ab.setContent(html_3f1b7a34f1f4590f5d1a77483dcdc58f);
+            
+        
+
+        marker_198a873f95a144161b4f586cdf38a0cf.bindPopup(popup_e68b16ae45b48e83fef0e7e2aa4a57ab)
+        ;
+
+        
+    
+    
+            marker_198a873f95a144161b4f586cdf38a0cf.bindTooltip(
+                `<div>
+                     달성군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3df1f3a30d6e270bc39c81b3040ccf55 = L.marker(
+                [35.503839, 128.7466992],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_feb9dc67cc51d52e8e108f1d1f1b13f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3df1f3a30d6e270bc39c81b3040ccf55.setIcon(icon_feb9dc67cc51d52e8e108f1d1f1b13f8);
+        
+    
+        var popup_b2fe5602ac66cfeec4020461bf47ba36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e6c48098ff8a9ef46b670ca65b4868e = $(`<div id="html_4e6c48098ff8a9ef46b670ca65b4868e" style="width: 100.0%; height: 100.0%;"><b>밀양시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 98: 2024-03-04 : 감자<br></div>`)[0];
+                popup_b2fe5602ac66cfeec4020461bf47ba36.setContent(html_4e6c48098ff8a9ef46b670ca65b4868e);
+            
+        
+
+        marker_3df1f3a30d6e270bc39c81b3040ccf55.bindPopup(popup_b2fe5602ac66cfeec4020461bf47ba36)
+        ;
+
+        
+    
+    
+            marker_3df1f3a30d6e270bc39c81b3040ccf55.bindTooltip(
+                `<div>
+                     밀양시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_056b3e7d51be1801226f550f3d4929e5 = L.marker(
+                [37.604115, 128.558588],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_c3558163dd462050364e3434bcdd5517 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_056b3e7d51be1801226f550f3d4929e5.setIcon(icon_c3558163dd462050364e3434bcdd5517);
+        
+    
+        var popup_b67468473dc1710a3f856cad9ca00f52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf66b1e45159cb38a7d4612d665e512c = $(`<div id="html_bf66b1e45159cb38a7d4612d665e512c" style="width: 100.0%; height: 100.0%;"><b>진부농협</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 104: 2024-02-20 : 감자<br></div>`)[0];
+                popup_b67468473dc1710a3f856cad9ca00f52.setContent(html_bf66b1e45159cb38a7d4612d665e512c);
+            
+        
+
+        marker_056b3e7d51be1801226f550f3d4929e5.bindPopup(popup_b67468473dc1710a3f856cad9ca00f52)
+        ;
+
+        
+    
+    
+            marker_056b3e7d51be1801226f550f3d4929e5.bindTooltip(
+                `<div>
+                     진부농협 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d085110d18b240a68bb27a8bc7cc1a8 = L.marker(
+                [35.1594647, 126.8515034],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_82f510d9d802a8177559b8f454c28348 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8d085110d18b240a68bb27a8bc7cc1a8.setIcon(icon_82f510d9d802a8177559b8f454c28348);
+        
+    
+        var popup_56006aa5580116ced7a391b445c57705 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_adfc6ef4dbd5bded19d7fdc597ef8b1f = $(`<div id="html_adfc6ef4dbd5bded19d7fdc597ef8b1f" style="width: 100.0%; height: 100.0%;"><b>광주시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 106: 2024-02-16 : 양파<br></div>`)[0];
+                popup_56006aa5580116ced7a391b445c57705.setContent(html_adfc6ef4dbd5bded19d7fdc597ef8b1f);
+            
+        
+
+        marker_8d085110d18b240a68bb27a8bc7cc1a8.bindPopup(popup_56006aa5580116ced7a391b445c57705)
+        ;
+
+        
+    
+    
+            marker_8d085110d18b240a68bb27a8bc7cc1a8.bindTooltip(
+                `<div>
+                     광주시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cc176fc687a8d6a7a8cd78fbde13298c = L.marker(
+                [37.2982901, 127.637033],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_21d6812c70f1ecb16ba433e889d62980 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cc176fc687a8d6a7a8cd78fbde13298c.setIcon(icon_21d6812c70f1ecb16ba433e889d62980);
+        
+    
+        var popup_d8283ce60d55432aefbc59b42430d965 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35c9273cabcf5273eb46593c77e48439 = $(`<div id="html_35c9273cabcf5273eb46593c77e48439" style="width: 100.0%; height: 100.0%;"><b>여주시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 100: 2024-02-26 : 고구마<br></div>`)[0];
+                popup_d8283ce60d55432aefbc59b42430d965.setContent(html_35c9273cabcf5273eb46593c77e48439);
+            
+        
+
+        marker_cc176fc687a8d6a7a8cd78fbde13298c.bindPopup(popup_d8283ce60d55432aefbc59b42430d965)
+        ;
+
+        
+    
+    
+            marker_cc176fc687a8d6a7a8cd78fbde13298c.bindTooltip(
+                `<div>
+                     여주시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f20fea6d2dc6088108c35b3e251f2c5e = L.marker(
+                [35.8236046, 128.5343124],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_fc7c971fc05b66e64eb5ade1fa48a812 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f20fea6d2dc6088108c35b3e251f2c5e.setIcon(icon_fc7c971fc05b66e64eb5ade1fa48a812);
+        
+    
+        var popup_4f92d6373cea8828d19739de4bcf4696 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c03d204a6a564945ada9dfd7cffe030 = $(`<div id="html_7c03d204a6a564945ada9dfd7cffe030" style="width: 100.0%; height: 100.0%;"><b>고령</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 101: 2024-02-22 : 참외<br></div>`)[0];
+                popup_4f92d6373cea8828d19739de4bcf4696.setContent(html_7c03d204a6a564945ada9dfd7cffe030);
+            
+        
+
+        marker_f20fea6d2dc6088108c35b3e251f2c5e.bindPopup(popup_4f92d6373cea8828d19739de4bcf4696)
+        ;
+
+        
+    
+    
+            marker_f20fea6d2dc6088108c35b3e251f2c5e.bindTooltip(
+                `<div>
+                     고령 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2786c8896fea316ed83747a2857c9d28 = L.marker(
+                [35.12894525, 128.97425885287763],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_fa9cf24817af80c3b93da05aa94247b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2786c8896fea316ed83747a2857c9d28.setIcon(icon_fa9cf24817af80c3b93da05aa94247b8);
+        
+    
+        var popup_5508b7c6e0dbb765991c681ef9055582 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee16fe59b208331a69447f6766b1f66d = $(`<div id="html_ee16fe59b208331a69447f6766b1f66d" style="width: 100.0%; height: 100.0%;"><b>엄궁</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 108: 2024-02-19 : 구근류<br></div>`)[0];
+                popup_5508b7c6e0dbb765991c681ef9055582.setContent(html_ee16fe59b208331a69447f6766b1f66d);
+            
+        
+
+        marker_2786c8896fea316ed83747a2857c9d28.bindPopup(popup_5508b7c6e0dbb765991c681ef9055582)
+        ;
+
+        
+    
+    
+            marker_2786c8896fea316ed83747a2857c9d28.bindTooltip(
+                `<div>
+                     엄궁 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_785420ac85ce6ab21a9e199e4817997f = L.marker(
+                [35.19882155, 129.13523261233632],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_79cec1bb0a7a1456cb75a225f7b51d95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_785420ac85ce6ab21a9e199e4817997f.setIcon(icon_79cec1bb0a7a1456cb75a225f7b51d95);
+        
+    
+        var popup_a612b445bccfa29f7132173f2f7365f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20c1ecf2958479108dbd2d655c242ace = $(`<div id="html_20c1ecf2958479108dbd2d655c242ace" style="width: 100.0%; height: 100.0%;"><b>반여</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 107: 2024-02-19 : 구근류<br></div>`)[0];
+                popup_a612b445bccfa29f7132173f2f7365f0.setContent(html_20c1ecf2958479108dbd2d655c242ace);
+            
+        
+
+        marker_785420ac85ce6ab21a9e199e4817997f.bindPopup(popup_a612b445bccfa29f7132173f2f7365f0)
+        ;
+
+        
+    
+    
+            marker_785420ac85ce6ab21a9e199e4817997f.bindTooltip(
+                `<div>
+                     반여 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63c72dcb8a8bddfd9deef92050402ef3 = L.marker(
+                [35.9190065, 128.283486],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_c31291ca2cac1b5996382a9edae12ace = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_63c72dcb8a8bddfd9deef92050402ef3.setIcon(icon_c31291ca2cac1b5996382a9edae12ace);
+        
+    
+        var popup_7fe4b30a113c2e41efbc681b1afaaad9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ade141971db166e4bf591292640d09a3 = $(`<div id="html_ade141971db166e4bf591292640d09a3" style="width: 100.0%; height: 100.0%;"><b>성주군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 113: 2024-02-18 : 참외<br></div>`)[0];
+                popup_7fe4b30a113c2e41efbc681b1afaaad9.setContent(html_ade141971db166e4bf591292640d09a3);
+            
+        
+
+        marker_63c72dcb8a8bddfd9deef92050402ef3.bindPopup(popup_7fe4b30a113c2e41efbc681b1afaaad9)
+        ;
+
+        
+    
+    
+            marker_63c72dcb8a8bddfd9deef92050402ef3.bindTooltip(
+                `<div>
+                     성주군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aa62dc8109ec9f45f9c7d5183a1750a8 = L.marker(
+                [35.98842, 128.942],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_0ffe0cb43269751281fbcfeb2640c9a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aa62dc8109ec9f45f9c7d5183a1750a8.setIcon(icon_0ffe0cb43269751281fbcfeb2640c9a4);
+        
+    
+        var popup_094e415a384a5a20b97398a4b0258c82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_026a4f798f0b9e6541b07be1afbb6090 = $(`<div id="html_026a4f798f0b9e6541b07be1afbb6090" style="width: 100.0%; height: 100.0%;"><b>영천시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 117: 2024-01-19 : 마늘<br></div>`)[0];
+                popup_094e415a384a5a20b97398a4b0258c82.setContent(html_026a4f798f0b9e6541b07be1afbb6090);
+            
+        
+
+        marker_aa62dc8109ec9f45f9c7d5183a1750a8.bindPopup(popup_094e415a384a5a20b97398a4b0258c82)
+        ;
+
+        
+    
+    
+            marker_aa62dc8109ec9f45f9c7d5183a1750a8.bindTooltip(
+                `<div>
+                     영천시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da7772a2d1d9f01b6686655064dde491 = L.marker(
+                [36.7920971, 127.1044526],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_b38ff677afdb38d88a874fc6a12e99be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_da7772a2d1d9f01b6686655064dde491.setIcon(icon_b38ff677afdb38d88a874fc6a12e99be);
+        
+    
+        var popup_c297f28947253fb5385cec1635bcfc72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99fd23340488dd57b3c221cfb59f19c3 = $(`<div id="html_99fd23340488dd57b3c221cfb59f19c3" style="width: 100.0%; height: 100.0%;"><b>아산</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 118: 2024-01-16 : 사과/배<br></div>`)[0];
+                popup_c297f28947253fb5385cec1635bcfc72.setContent(html_99fd23340488dd57b3c221cfb59f19c3);
+            
+        
+
+        marker_da7772a2d1d9f01b6686655064dde491.bindPopup(popup_c297f28947253fb5385cec1635bcfc72)
+        ;
+
+        
+    
+    
+            marker_da7772a2d1d9f01b6686655064dde491.bindTooltip(
+                `<div>
+                     아산 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a383099c3c198bcb90607a87946289b = L.marker(
+                [34.4867515, 126.2629264],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_ee881f998af9eba7a042a273e01f733c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a383099c3c198bcb90607a87946289b.setIcon(icon_ee881f998af9eba7a042a273e01f733c);
+        
+    
+        var popup_964815f2f8e525ef4f8bee23836341fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1e62b75a155a9970d53951d0e5e2fb6 = $(`<div id="html_f1e62b75a155a9970d53951d0e5e2fb6" style="width: 100.0%; height: 100.0%;"><b>진도군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 125: 2024-01-17 : 봄동<br></div>`)[0];
+                popup_964815f2f8e525ef4f8bee23836341fe.setContent(html_f1e62b75a155a9970d53951d0e5e2fb6);
+            
+        
+
+        marker_7a383099c3c198bcb90607a87946289b.bindPopup(popup_964815f2f8e525ef4f8bee23836341fe)
+        ;
+
+        
+    
+    
+            marker_7a383099c3c198bcb90607a87946289b.bindTooltip(
+                `<div>
+                     진도군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f00d9fff0d2fe6453d4ccdb7d50f81f2 = L.marker(
+                [36.007, 127.6609],
+                {
+}
+            ).addTo(map_44703a503b44a71be5080267d6e56c7c);
+        
+    
+            var icon_e61407fc19d181c895651d71ce94dd60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f00d9fff0d2fe6453d4ccdb7d50f81f2.setIcon(icon_e61407fc19d181c895651d71ce94dd60);
+        
+    
+        var popup_ffbf4d24972ca7079d99fcf5b4e3e4bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_206098cd79653ff55d64cff4b830332b = $(`<div id="html_206098cd79653ff55d64cff4b830332b" style="width: 100.0%; height: 100.0%;"><b>무주군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>ID 128: 2024-01-12 : 사과<br></div>`)[0];
+                popup_ffbf4d24972ca7079d99fcf5b4e3e4bc.setContent(html_206098cd79653ff55d64cff4b830332b);
+            
+        
+
+        marker_f00d9fff0d2fe6453d4ccdb7d50f81f2.bindPopup(popup_ffbf4d24972ca7079d99fcf5b4e3e4bc)
+        ;
+
+        
+    
+    
+            marker_f00d9fff0d2fe6453d4ccdb7d50f81f2.bindTooltip(
+                `<div>
+                     무주군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
