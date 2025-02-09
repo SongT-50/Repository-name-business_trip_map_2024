@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b9963f412be1867317a7796bc4ac721 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+        <h3 align="center" style="font-size:20px">
+            <b>2025년 경매사 방문지역</b>
+        </h3>
+        
+        <div style="position: fixed; 
+                    top: 50px; 
+                    right: 50px; 
+                    width: 200px;
+                    height: auto;
+                    background-color: white;
+                    border: 2px solid grey;
+                    z-index: 1000;
+                    padding: 10px;
+                    font-family: Arial;">
+            <h4 style="text-align: center; margin: 0 0 10px 0;">방문 횟수별 지역</h4>
+            <table style="width: 100%; border-collapse: collapse;">
+        
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 5px;">
+                        <div style="width: 15px; 
+                                  height: 15px; 
+                                  background-color: red; 
+                                  display: inline-block;
+                                  margin-right: 5px;"></div>
+                        <b>2회 방문</b>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 5px 5px 10px 20px; font-size: 0.9em;">
+                        김천시, 예산군
+                    </td>
+                </tr>
+                
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 5px;">
+                        <div style="width: 15px; 
+                                  height: 15px; 
+                                  background-color: blue; 
+                                  display: inline-block;
+                                  margin-right: 5px;"></div>
+                        <b>1회 방문</b>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 5px 5px 10px 20px; font-size: 0.9em;">
+                        고창군, 금산군, 남원시, 논산시, 사천시, 영천시, 옥천군
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        
+    
+            <div class="folium-map" id="map_9b9963f412be1867317a7796bc4ac721" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b9963f412be1867317a7796bc4ac721 = L.map(
+                "map_9b9963f412be1867317a7796bc4ac721",
+                {
+                    center: [36.5, 127.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1303ed8a856b04e9697ed7d91caef1be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1303ed8a856b04e9697ed7d91caef1be.addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var marker_ab2c3e7e6749b6d5f0724c850ee054ae = L.marker(
+                [36.1398035, 128.1139534],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_465517a77d4309384289d36b341cb31b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ab2c3e7e6749b6d5f0724c850ee054ae.setIcon(icon_465517a77d4309384289d36b341cb31b);
+        
+    
+        var popup_42e46a7c469e772dbc8aef8e4e90751f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e1bcf6b8c3563c53d02f1968b380506 = $(`<div id="html_3e1bcf6b8c3563c53d02f1968b380506" style="width: 100.0%; height: 100.0%;"><b>김천시</b><br>방문 횟수: 2회<br><br>방문 내역:<br>2025-01-07 : 사과 작목반<br>출장인원: 윤정기, 이광진<br><br>2025-01-14 : 버석 농장<br>출장인원: 송화신, 김기영<br><br></div>`)[0];
+                popup_42e46a7c469e772dbc8aef8e4e90751f.setContent(html_3e1bcf6b8c3563c53d02f1968b380506);
+            
+        
+
+        marker_ab2c3e7e6749b6d5f0724c850ee054ae.bindPopup(popup_42e46a7c469e772dbc8aef8e4e90751f)
+        ;
+
+        
+    
+    
+            marker_ab2c3e7e6749b6d5f0724c850ee054ae.bindTooltip(
+                `<div>
+                     김천시 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_32ed9ca273deb800707c61f87ca11f8b = L.marker(
+                [36.6808989, 126.8448742],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_ba56c76a517a322118014b500a7e7d8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_32ed9ca273deb800707c61f87ca11f8b.setIcon(icon_ba56c76a517a322118014b500a7e7d8f);
+        
+    
+        var popup_c7aa9a19e972fb6baf1024403cba3d99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc2b08c99000e22acb2468cd2269d57e = $(`<div id="html_cc2b08c99000e22acb2468cd2269d57e" style="width: 100.0%; height: 100.0%;"><b>예산군</b><br>방문 횟수: 2회<br><br>방문 내역:<br>2025-01-13 : 사과 농장<br>출장인원: 윤정기, 이광진<br><br>2025-01-17 : 쪽파<br>출장인원: 김언중<br><br></div>`)[0];
+                popup_c7aa9a19e972fb6baf1024403cba3d99.setContent(html_cc2b08c99000e22acb2468cd2269d57e);
+            
+        
+
+        marker_32ed9ca273deb800707c61f87ca11f8b.bindPopup(popup_c7aa9a19e972fb6baf1024403cba3d99)
+        ;
+
+        
+    
+    
+            marker_32ed9ca273deb800707c61f87ca11f8b.bindTooltip(
+                `<div>
+                     예산군 (2회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ca99ee5335468e8f196ecef5cbb9b81 = L.marker(
+                [36.1868154, 127.0987538],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_042d35b3ef9f185071a457001bdad8f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8ca99ee5335468e8f196ecef5cbb9b81.setIcon(icon_042d35b3ef9f185071a457001bdad8f1);
+        
+    
+        var popup_22a2a8a55b6c2dc6b136edd8f0a65bd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19ebe176d4e4b732b26778fa3d468774 = $(`<div id="html_19ebe176d4e4b732b26778fa3d468774" style="width: 100.0%; height: 100.0%;"><b>논산시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-08 : 배 작목반<br>출장인원: 윤정기, 이광진<br><br></div>`)[0];
+                popup_22a2a8a55b6c2dc6b136edd8f0a65bd9.setContent(html_19ebe176d4e4b732b26778fa3d468774);
+            
+        
+
+        marker_8ca99ee5335468e8f196ecef5cbb9b81.bindPopup(popup_22a2a8a55b6c2dc6b136edd8f0a65bd9)
+        ;
+
+        
+    
+    
+            marker_8ca99ee5335468e8f196ecef5cbb9b81.bindTooltip(
+                `<div>
+                     논산시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_395ebe4091784ffe4d43df7f1b13428c = L.marker(
+                [35.4163118, 127.3903713],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_81817036f0204694301bb0f3c89b15c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_395ebe4091784ffe4d43df7f1b13428c.setIcon(icon_81817036f0204694301bb0f3c89b15c2);
+        
+    
+        var popup_e8c49d9c49a9fd9359529746d37f4c47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_968c2864983f04e2a5c72102463eeec7 = $(`<div id="html_968c2864983f04e2a5c72102463eeec7" style="width: 100.0%; height: 100.0%;"><b>남원시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-10 : 사과 작목반<br>출장인원: 윤정기, 이광진<br><br></div>`)[0];
+                popup_e8c49d9c49a9fd9359529746d37f4c47.setContent(html_968c2864983f04e2a5c72102463eeec7);
+            
+        
+
+        marker_395ebe4091784ffe4d43df7f1b13428c.bindPopup(popup_e8c49d9c49a9fd9359529746d37f4c47)
+        ;
+
+        
+    
+    
+            marker_395ebe4091784ffe4d43df7f1b13428c.bindTooltip(
+                `<div>
+                     남원시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e7613d3d4ca0df8e3f38e57a08bf001 = L.marker(
+                [35.98842, 128.942],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_b7bf0cb2a665112426e3fc655c9126ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e7613d3d4ca0df8e3f38e57a08bf001.setIcon(icon_b7bf0cb2a665112426e3fc655c9126ca);
+        
+    
+        var popup_c78c88da1095d8cdaa339a1e1475c63f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12b8d94ddf70f0636443b652119128bf = $(`<div id="html_12b8d94ddf70f0636443b652119128bf" style="width: 100.0%; height: 100.0%;"><b>영천시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-16 : 깐마늘<br>출장인원: 오준서, 135번 국석우<br><br></div>`)[0];
+                popup_c78c88da1095d8cdaa339a1e1475c63f.setContent(html_12b8d94ddf70f0636443b652119128bf);
+            
+        
+
+        marker_8e7613d3d4ca0df8e3f38e57a08bf001.bindPopup(popup_c78c88da1095d8cdaa339a1e1475c63f)
+        ;
+
+        
+    
+    
+            marker_8e7613d3d4ca0df8e3f38e57a08bf001.bindTooltip(
+                `<div>
+                     영천시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fdd8b0aad5059acc40080d0de41b8144 = L.marker(
+                [35.003468, 128.064562],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_5d88cdebd922dd488e4a21954e0e8790 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fdd8b0aad5059acc40080d0de41b8144.setIcon(icon_5d88cdebd922dd488e4a21954e0e8790);
+        
+    
+        var popup_c349d4ae87da30f81fbdffd00e9ad5b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b174022994b10783033663ca57d38fa = $(`<div id="html_2b174022994b10783033663ca57d38fa" style="width: 100.0%; height: 100.0%;"><b>사천시</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-16 : 통연근<br>출장인원: 오준서, 135번 국석우<br><br></div>`)[0];
+                popup_c349d4ae87da30f81fbdffd00e9ad5b2.setContent(html_2b174022994b10783033663ca57d38fa);
+            
+        
+
+        marker_fdd8b0aad5059acc40080d0de41b8144.bindPopup(popup_c349d4ae87da30f81fbdffd00e9ad5b2)
+        ;
+
+        
+    
+    
+            marker_fdd8b0aad5059acc40080d0de41b8144.bindTooltip(
+                `<div>
+                     사천시 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0807e82c4242d346ea646687c3d417e5 = L.marker(
+                [36.1087249, 127.48815],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_f1656c8f885e7aa823effa4c64978354 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0807e82c4242d346ea646687c3d417e5.setIcon(icon_f1656c8f885e7aa823effa4c64978354);
+        
+    
+        var popup_4fda956d9be6a8499f5fca36581f0275 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8adaddc7a92b1f756e43cb05ac65faa = $(`<div id="html_b8adaddc7a92b1f756e43cb05ac65faa" style="width: 100.0%; height: 100.0%;"><b>금산군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-17 : 상추, 깻잎<br>출장인원: 서병수, 김선우<br><br></div>`)[0];
+                popup_4fda956d9be6a8499f5fca36581f0275.setContent(html_b8adaddc7a92b1f756e43cb05ac65faa);
+            
+        
+
+        marker_0807e82c4242d346ea646687c3d417e5.bindPopup(popup_4fda956d9be6a8499f5fca36581f0275)
+        ;
+
+        
+    
+    
+            marker_0807e82c4242d346ea646687c3d417e5.bindTooltip(
+                `<div>
+                     금산군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f7e2b8524a82fc881d12d31a280900c = L.marker(
+                [36.3061692, 127.571482],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_1ad897019e9401a34c0fe98fae16f88e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f7e2b8524a82fc881d12d31a280900c.setIcon(icon_1ad897019e9401a34c0fe98fae16f88e);
+        
+    
+        var popup_3e0bc270189606cc8d9ffe212e9de597 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ca6abcd8ad6f975455098bab4f202db = $(`<div id="html_8ca6abcd8ad6f975455098bab4f202db" style="width: 100.0%; height: 100.0%;"><b>옥천군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-17 : 상추, 깻잎<br>출장인원: 서병수, 김선우<br><br></div>`)[0];
+                popup_3e0bc270189606cc8d9ffe212e9de597.setContent(html_8ca6abcd8ad6f975455098bab4f202db);
+            
+        
+
+        marker_5f7e2b8524a82fc881d12d31a280900c.bindPopup(popup_3e0bc270189606cc8d9ffe212e9de597)
+        ;
+
+        
+    
+    
+            marker_5f7e2b8524a82fc881d12d31a280900c.bindTooltip(
+                `<div>
+                     옥천군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_718787763d777d14de4552d91bb951cf = L.marker(
+                [35.4355, 126.7021],
+                {
+}
+            ).addTo(map_9b9963f412be1867317a7796bc4ac721);
+        
+    
+            var icon_735f68469f0e09518479d0090c2f7885 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_718787763d777d14de4552d91bb951cf.setIcon(icon_735f68469f0e09518479d0090c2f7885);
+        
+    
+        var popup_204b8875fcdda1b4a7a485f13010d184 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f02df6d3966253d49c8315516c48212 = $(`<div id="html_0f02df6d3966253d49c8315516c48212" style="width: 100.0%; height: 100.0%;"><b>고창군</b><br>방문 횟수: 1회<br><br>방문 내역:<br>2025-01-20 : 상추, 깻잎<br>출장인원: 김득중, 김언중<br><br></div>`)[0];
+                popup_204b8875fcdda1b4a7a485f13010d184.setContent(html_0f02df6d3966253d49c8315516c48212);
+            
+        
+
+        marker_718787763d777d14de4552d91bb951cf.bindPopup(popup_204b8875fcdda1b4a7a485f13010d184)
+        ;
+
+        
+    
+    
+            marker_718787763d777d14de4552d91bb951cf.bindTooltip(
+                `<div>
+                     고창군 (1회 방문)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
