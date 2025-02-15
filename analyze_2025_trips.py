@@ -132,6 +132,23 @@ def analyze_2025_trips():
             '김천시': '경상북도 김천시'
         }
 
+        # 팝업 정보 생성 부분 수정
+        detailed_items = {
+            '대구시': '참외 작목현황 조사 및 재배농가 현장점검',
+            '밀양': '하우스감자 시세 동향 조사 및 출하 상담, 재배현장 점검',
+            '해남군': '봉동배추, 대파 출하독려 및 작황조사',
+            '김천시': '사과 출하 독려 및 저장현황 점검',
+            '논산시': '배 출하 독려 및 저장량 조사',
+            '남원시': '사과 출하 독려 및 시장동향 파악',
+            '예산군': '사과 출하 독려 및 저장현황 조사',
+            '영천시': '깐마늘 출하 독려 및 작업현장 점검',
+            '사천시': '통연근 출하 독려 및 작황조사',
+            '예산군': '쪽파 출하독려 및 재배현황 점검',
+            '금산군': '상추, 깻잎 출하 독려 및 작황점검',
+            '옥천군': '상추, 깻잎 출하 독려 및 시장동향 파악',
+            '고창군': '쪽파 출하독려 및 재배현황 조사'
+        }
+
         # 각 위치에 마커 추가
         failed_locations = []
         for location, count in visit_counts.items():
@@ -154,20 +171,34 @@ def analyze_2025_trips():
                     # 해당 위치의 방문 정보 수집
                     location_visits = df[df['출장장소(시군구)'] == location]
                     
-                    # 팝업 정보 생성
-                    popup_text = f"<b>{location}</b><br>"
-                    popup_text += f"방문 횟수: {count}회<br><br>"
-                    popup_text += "방문 내역:<br>"
+                    # 팝업 텍스트 생성
+                    popup_text = f'''
+                    <div style="font-size: 16px;">  <!-- 기본 글씨 크기 증가 -->
+                        <h3 style="font-size: 22px; margin: 8px 0; color: #2c3e50;"><b>{location}</b></h3>
+                        <p style="margin: 8px 0; font-size: 18px;"><b>방문 횟수: {count}회</b></p>
+                        <br>
+                        <p style="margin: 8px 0; font-size: 18px;"><b>방문 내역:</b></p>
+                    '''
+
                     for _, row in location_visits.iterrows():
-                        # 날짜 형식을 문자열로 변환하고 시간 부분 제거
                         visit_date = pd.to_datetime(row['출장일자(시작)']).strftime('%Y-%m-%d')
-                        popup_text += f"{visit_date} : {row['주요품목']}<br>"
-                        popup_text += f"출장인원: {row['출장인원(이름)']}<br><br>"
+                        
+                        # 주요품목 상세 설명
+                        detailed_item = detailed_items.get(location, row['주요품목'])
+                        popup_text += f'''
+                        <div style="margin: 12px 0; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <p style="margin: 4px 0; font-size: 18px;"><b>{visit_date}</b></p>
+                            <p style="margin: 4px 0; font-size: 16px;">• {detailed_item}</p>
+                            <p style="margin: 4px 0; font-size: 16px;">• 출장인원: {row['출장인원(이름)']}</p>
+                        </div>
+                        '''
+
+                    popup_text += '</div>'
 
                     # 마커 추가
                     folium.Marker(
                         location=[loc.latitude, loc.longitude],
-                        popup=folium.Popup(popup_text, max_width=300),
+                        popup=folium.Popup(popup_text, max_width=450),  # 팝업 크기 증가
                         tooltip=f"{location} ({count}회 방문)",
                         icon=folium.Icon(color=icon_color, icon='info-sign')
                     ).add_to(m)
